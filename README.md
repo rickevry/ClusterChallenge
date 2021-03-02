@@ -8,6 +8,10 @@ Test bench to run tests against a Kubernetes cluster.
 - Worker2 is restarted (2-6 second downtime)
 - Worker1 fails to reconnect to restarted Worker2
 
+### Details
+- Proto.Cluster.Identity.MongoDb 0.12.0
+- Tested in AKS and Kubernetes Docker for Windows
+
 ### Log files
 
 - [Successful communication][1] 
