@@ -1,0 +1,225 @@
+[17:44:51 INF] AllowedHosts=* (JsonConfigurationProvider for 'appsettings.json' (Optional))
+ASPNETCORE_URLS=http://+:80 (EnvironmentVariablesConfigurationProvider)
+ClusterSettings:
+  ClusterHost=protohost (EnvironmentVariablesConfigurationProvider)
+  ClusterName=MyCluster (JsonConfigurationProvider for 'appsettings.json' (Optional))
+  ClusterPort=0 (EnvironmentVariablesConfigurationProvider)
+  ConsulUri=http://dev-consul:8500 (JsonConfigurationProvider for 'appsettings.json' (Optional))
+  PIDCollectionName=PID (EnvironmentVariablesConfigurationProvider)
+  PIDConnectionString=mongodb://admin:password@mongodb:27017/?authSource=admin (EnvironmentVariablesConfigurationProvider)
+  PIDDatabaseName=ProtoMongo (EnvironmentVariablesConfigurationProvider)
+  RedisPort=6379 (JsonConfigurationProvider for 'appsettings.json' (Optional))
+contentRoot=/app (Microsoft.Extensions.Configuration.ChainedConfigurationProvider)
+DOTNET_RUNNING_IN_CONTAINER=true (EnvironmentVariablesConfigurationProvider)
+DOTNET_VERSION=5.0.3 (EnvironmentVariablesConfigurationProvider)
+HOME=/root (EnvironmentVariablesConfigurationProvider)
+HOSTNAME=worker1-0 (EnvironmentVariablesConfigurationProvider)
+KUBERNETES_PORT=tcp://10.0.0.1:443 (EnvironmentVariablesConfigurationProvider)
+KUBERNETES_PORT_443_TCP=tcp://10.0.0.1:443 (EnvironmentVariablesConfigurationProvider)
+KUBERNETES_PORT_443_TCP_ADDR=10.0.0.1 (EnvironmentVariablesConfigurationProvider)
+KUBERNETES_PORT_443_TCP_PORT=443 (EnvironmentVariablesConfigurationProvider)
+KUBERNETES_PORT_443_TCP_PROTO=tcp (EnvironmentVariablesConfigurationProvider)
+KUBERNETES_SERVICE_HOST=10.0.0.1 (EnvironmentVariablesConfigurationProvider)
+KUBERNETES_SERVICE_PORT=443 (EnvironmentVariablesConfigurationProvider)
+KUBERNETES_SERVICE_PORT_HTTPS=443 (EnvironmentVariablesConfigurationProvider)
+Logging:
+  LogLevel:
+    Default=Debug (JsonConfigurationProvider for 'appsettings.json' (Optional))
+    Grpc=Debug (JsonConfigurationProvider for 'appsettings.json' (Optional))
+    Microsoft=Warning (JsonConfigurationProvider for 'appsettings.json' (Optional))
+    Microsoft.Hosting.Lifetime=Information (JsonConfigurationProvider for 'appsettings.json' (Optional))
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin (EnvironmentVariablesConfigurationProvider)
+PROTOHOST=10.244.3.67 (EnvironmentVariablesConfigurationProvider)
+RUNNING_IN_CONTAINER=true (Microsoft.Extensions.Configuration.ChainedConfigurationProvider)
+VERSION=5.0.3 (Microsoft.Extensions.Configuration.ChainedConfigurationProvider)
+
+[17:44:51 DBG] Running with Kubernetes Provider
+[17:44:51 DBG] Using PROTOHOST
+[17:44:51 DBG] BindTo to 10.244.3.67 port 0
+[17:44:51 DBG] WithAdvertisedHost to 10.244.3.67
+[17:44:51 INF] 'PingGrain' is set up FromProducer with Kind 'ping'
+[17:44:51 INF] 'PoisonGrain' is set up FromProducer with Kind 'poison1'
+[17:44:51 INF] Starting Proto.Actor server on 10.244.3.67:46815 (10.244.3.67:46815)
+[17:44:51 INF] Starting
+[17:44:52 INF] Started Cluster Heartbeats
+[17:44:52 INF] Registering service worker1-0 on 10.244.3.67:46815
+[17:44:52 INF] Using Kubernetes namespace: clusterchallenge
+[17:44:52 WRN] Registration port doesn't match any of the container ports
+[17:44:52 INF] Using Kubernetes port: 46815
+[17:44:52 DBG] [Cluster] Starting to watch pods with cluster.proto.actor/cluster=MyCluster
+[17:44:52 INF] Started as cluster member
+[17:44:52 INF] MainWorker start 2021-03-02 18:15
+[17:44:52 DBG] Updating Cluster Topology
+[17:44:52 DBG] Published ClusterTopology event { "members": [ { "host": "10.244.3.67", "port": 46815, "id": "76b3db92faad4e4caf079f2f1fc2480d", "kinds": [ "ping", "poison1" ] } ], "joined": [ { "host": "10.244.3.67", "port": 46815, "id": "76b3db92faad4e4caf079f2f1fc2480d" } ] }
+[17:44:52 INF] Cluster members joined ["{ \"host\": \"10.244.3.67\", \"port\": 46815, \"id\": \"76b3db92faad4e4caf079f2f1fc2480d\" }"]
+[17:44:52 DBG] Updating Cluster Topology
+[17:44:52 DBG] Published ClusterTopology event { "members": [ { "host": "10.244.4.249", "port": 35141, "id": "14c768b715bd42ef8cb0d6b04a94c009", "kinds": [ "poison2", "pong" ] }, { "host": "10.244.3.67", "port": 46815, "id": "76b3db92faad4e4caf079f2f1fc2480d", "kinds": [ "ping", "poison1" ] } ], "joined": [ { "host": "10.244.4.249", "port": 35141, "id": "14c768b715bd42ef8cb0d6b04a94c009" } ] }
+[17:44:52 INF] Cluster members joined ["{ \"host\": \"10.244.4.249\", \"port\": 35141, \"id\": \"14c768b715bd42ef8cb0d6b04a94c009\" }"]
+[17:44:57 DBG] Statistics: Actor Count 0
+[17:44:57 DBG] Requesting ping/Worker1/101 Message { "Counter": 1 }
+[17:44:57 DBG] Got lock on first try for ping/Worker1/101
+[17:44:57 DBG] Storing placement lookup for Worker1/101 ping
+[17:44:57 INF] 10.244.3.67:46815 - Started
+[17:44:57 DBG] Storing activation: 76b3db92faad4e4caf079f2f1fc2480d, {"LockId": "0bb6772b-28fa-48f3-a1b4-e10afe16d1bb", "ClusterIdentity": {"Identity": "Worker1/101", "Kind": "ping", "$type": "ClusterIdentity"}, "$type": "SpawnLock"}, {"Address": "10.244.3.67:46815", "Id": "placement-activator/ping/Worker1/101$5", "$type": "PID"}
+10.244.3.67:46815 - Started
+[17:44:57 INF] PingGrain.Started with: {"Tenant": "Worker1", "Name": "ping", "Eid": "101", "Success": true, "Failed": false, "$type": "PIDValues"}
+[17:44:57 DBG] 10.244.3.67:46815/placement-activator Responding to 10.244.3.67:46815/$4 with message { "pid": 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 }
+[17:44:57 DBG] 10.244.3.67:46815/$2 Responding to 10.244.3.67:46815/$3 with message Proto.Cluster.Identity.PidResult
+[17:44:57 DBG] Requesting Worker1/101-ping Message { "Counter": 1 } - Got PID 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 from IdentityLookup
+[17:44:57 INF] PingGrain.HandlePing
+[17:44:57 DBG] 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 Responding to 10.244.3.67:46815/$6 with message { "Counter": 2, "Success": true }
+[17:44:57 INF] Ping counter is 2
+[17:44:57 DBG] Requesting pong/Worker2/101 Message { "Counter": 1 }
+[17:44:57 DBG] 10.244.3.67:46815/$2 Responding to 10.244.3.67:46815/$7 with message Proto.Cluster.Identity.PidResult
+[17:44:57 DBG] Requesting Worker2/101-pong Message { "Counter": 1 } - Got PID 10.244.4.249:35141/placement-activator/pong/Worker2/101$5 from IdentityLookup
+[17:44:57 DBG] [EndpointManager] Requesting new endpoint for 10.244.4.249:35141
+[17:44:57 DBG] [EndpointWriterMailbox] received System Message {"$type": "Started"}
+[17:44:57 DBG] [EndpointManager] Created new endpoint for 10.244.4.249:35141
+[17:44:57 DBG] [EndpointWriterMailbox] received User Message {"Header": [], "Message": {"Counter": 1, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$8", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:44:57 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: True Suspended: False
+[17:44:57 DBG] [EndpointWriterMailbox] Processing System Message {"$type": "Started"}
+[17:44:57 DBG] [EndpointActor] Connecting to address 10.244.4.249:35141
+[17:44:57 DBG] [EndpointActor] Created channel and client for address 10.244.4.249:35141
+[17:44:57 DBG] [EndpointActor] Connected client for address 10.244.4.249:35141
+[17:44:57 DBG] [EndpointActor] Created reader for address 10.244.4.249:35141
+[17:44:57 DBG] [EndpointWriterMailbox] received System Message {"Address": "10.244.4.249:35141", "$type": "EndpointConnectedEvent"}
+[17:44:57 DBG] [EndpointActor] Connected to address 10.244.4.249:35141
+[17:44:57 DBG] [EndpointWriterMailbox] Processing User Message {"Header": [], "Message": {"Counter": 1, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$8", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:44:57 DBG] [EndpointWriterMailbox] Calling message invoker
+[17:44:57 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: False Suspended: False
+[17:44:57 DBG] [EndpointWriterMailbox] Processing System Message {"Address": "10.244.4.249:35141", "$type": "EndpointConnectedEvent"}
+[17:44:57 DBG] Unknown system message EndpointConnectedEvent { Address = 10.244.4.249:35141 }
+[17:45:02 DBG] Statistics: Actor Count 1
+[17:45:02 DBG] TryRequestAsync timed out, PID from IIdentityLookup
+[17:45:02 WRN] RequestAsync retried but failed for ClusterIdentity pong/Worker2/101
+[17:45:02 INF] Failed to call pong 1'
+[17:45:03 DBG] Requesting ping/Worker1/101 Message { "Counter": 2 }
+[17:45:03 DBG] Requesting Worker1/101-ping Message { "Counter": 2 } - Got PID 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 from PidCache
+[17:45:03 INF] PingGrain.HandlePing
+[17:45:03 DBG] 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 Responding to 10.244.3.67:46815/$10 with message { "Counter": 3, "Success": true }
+[17:45:03 INF] Ping counter is 3
+[17:45:03 DBG] Requesting pong/Worker2/101 Message { "Counter": 1 }
+[17:45:03 DBG] 10.244.3.67:46815/$2 Responding to 10.244.3.67:46815/$11 with message Proto.Cluster.Identity.PidResult
+[17:45:03 DBG] Requesting Worker2/101-pong Message { "Counter": 1 } - Got PID 10.244.4.249:35141/placement-activator/pong/Worker2/101$5 from IdentityLookup
+[17:45:03 DBG] [EndpointWriterMailbox] received User Message {"Header": [], "Message": {"Counter": 1, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$12", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:03 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: False HasUserMessages: True Suspended: False
+[17:45:03 DBG] [EndpointWriterMailbox] Processing User Message {"Header": [], "Message": {"Counter": 1, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$12", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:03 DBG] [EndpointWriterMailbox] Calling message invoker
+[17:45:07 DBG] [EndpointReader] Accepted connection request from ipv4:10.244.4.249:37536 to 10.244.3.67:46815
+[17:45:07 DBG] Statistics: Actor Count 1
+[17:45:07 DBG] [EndpointReader] Received a batch of 3 messages from ipv4:10.244.4.249:37536
+[17:45:07 INF] [DeadLetter] could not deliver 'PongResponse:{ "Counter": 2, "Success": true }' to '10.244.3.67:46815/$8' from 'null'
+[17:45:07 INF] Pong counter is 2
+[17:45:07 DBG] 10.244.3.67:46815/ClusterHeartBeat Responding to 10.244.4.249:35141/$156 with message { "actorCount": 10 }
+[17:45:07 DBG] [EndpointWriterMailbox] received User Message {"Header": [], "Message": {"ActorCount": 10, "$type": "HeartbeatResponse"}, "Target": {"Address": "10.244.4.249:35141", "Id": "$156", "$type": "PID"}, "Sender": null, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:07 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: False HasUserMessages: True Suspended: False
+[17:45:07 DBG] [EndpointWriterMailbox] Processing User Message {"Header": [], "Message": {"ActorCount": 10, "$type": "HeartbeatResponse"}, "Target": {"Address": "10.244.4.249:35141", "Id": "$156", "$type": "PID"}, "Sender": null, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:07 DBG] [EndpointWriterMailbox] Calling message invoker
+[17:45:08 DBG] Requesting ping/Worker1/101 Message { "Counter": 3 }
+[17:45:08 DBG] Requesting Worker1/101-ping Message { "Counter": 3 } - Got PID 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 from PidCache
+[17:45:08 INF] PingGrain.HandlePing
+[17:45:08 DBG] 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 Responding to 10.244.3.67:46815/$13 with message { "Counter": 4, "Success": true }
+[17:45:08 INF] Ping counter is 4
+[17:45:08 DBG] Requesting pong/Worker2/101 Message { "Counter": 2 }
+[17:45:08 DBG] Requesting Worker2/101-pong Message { "Counter": 2 } - Got PID 10.244.4.249:35141/placement-activator/pong/Worker2/101$5 from PidCache
+[17:45:08 DBG] [EndpointWriterMailbox] received User Message {"Header": [], "Message": {"Counter": 2, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$14", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:08 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: False HasUserMessages: True Suspended: False
+[17:45:08 DBG] [EndpointWriterMailbox] Processing User Message {"Header": [], "Message": {"Counter": 2, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$14", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:08 DBG] [EndpointWriterMailbox] Calling message invoker
+[17:45:08 DBG] [EndpointReader] Received a batch of 1 messages from ipv4:10.244.4.249:37536
+[17:45:08 INF] Pong counter is 3
+[17:45:09 DBG] Requesting ping/Worker1/101 Message { "Counter": 4 }
+[17:45:09 DBG] Requesting Worker1/101-ping Message { "Counter": 4 } - Got PID 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 from PidCache
+[17:45:09 INF] PingGrain.HandlePing
+[17:45:09 DBG] 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 Responding to 10.244.3.67:46815/$15 with message { "Counter": 5, "Success": true }
+[17:45:09 INF] Ping counter is 5
+[17:45:09 DBG] Requesting pong/Worker2/101 Message { "Counter": 3 }
+[17:45:09 DBG] Requesting Worker2/101-pong Message { "Counter": 3 } - Got PID 10.244.4.249:35141/placement-activator/pong/Worker2/101$5 from PidCache
+[17:45:09 DBG] [EndpointWriterMailbox] received User Message {"Header": [], "Message": {"Counter": 3, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$16", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:09 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: False HasUserMessages: True Suspended: False
+[17:45:09 DBG] [EndpointWriterMailbox] Processing User Message {"Header": [], "Message": {"Counter": 3, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$16", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:09 DBG] [EndpointWriterMailbox] Calling message invoker
+[17:45:09 DBG] [EndpointReader] Received a batch of 1 messages from ipv4:10.244.4.249:37536
+[17:45:09 INF] Pong counter is 4
+[17:45:10 DBG] Requesting ping/Worker1/101 Message { "Counter": 5 }
+[17:45:10 DBG] Requesting Worker1/101-ping Message { "Counter": 5 } - Got PID 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 from PidCache
+[17:45:10 INF] PingGrain.HandlePing
+[17:45:10 DBG] 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 Responding to 10.244.3.67:46815/$17 with message { "Counter": 6, "Success": true }
+[17:45:10 INF] Ping counter is 6
+[17:45:10 DBG] Requesting pong/Worker2/101 Message { "Counter": 4 }
+[17:45:10 DBG] Requesting Worker2/101-pong Message { "Counter": 4 } - Got PID 10.244.4.249:35141/placement-activator/pong/Worker2/101$5 from PidCache
+[17:45:10 DBG] [EndpointWriterMailbox] received User Message {"Header": [], "Message": {"Counter": 4, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$18", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:10 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: False HasUserMessages: True Suspended: False
+[17:45:10 DBG] [EndpointWriterMailbox] Processing User Message {"Header": [], "Message": {"Counter": 4, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$18", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:10 DBG] [EndpointWriterMailbox] Calling message invoker
+[17:45:10 DBG] [EndpointReader] Received a batch of 1 messages from ipv4:10.244.4.249:37536
+[17:45:10 INF] Pong counter is 5
+[17:45:11 DBG] Requesting ping/Worker1/101 Message { "Counter": 6 }
+[17:45:11 DBG] Requesting Worker1/101-ping Message { "Counter": 6 } - Got PID 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 from PidCache
+[17:45:11 INF] PingGrain.HandlePing
+[17:45:11 DBG] 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 Responding to 10.244.3.67:46815/$19 with message { "Counter": 7, "Success": true }
+[17:45:11 INF] Ping counter is 7
+[17:45:11 DBG] Requesting pong/Worker2/101 Message { "Counter": 5 }
+[17:45:11 DBG] Requesting Worker2/101-pong Message { "Counter": 5 } - Got PID 10.244.4.249:35141/placement-activator/pong/Worker2/101$5 from PidCache
+[17:45:11 DBG] [EndpointWriterMailbox] received User Message {"Header": [], "Message": {"Counter": 5, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$20", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:11 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: False HasUserMessages: True Suspended: False
+[17:45:11 DBG] [EndpointWriterMailbox] Processing User Message {"Header": [], "Message": {"Counter": 5, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$20", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:11 DBG] [EndpointWriterMailbox] Calling message invoker
+[17:45:11 DBG] [EndpointReader] Received a batch of 1 messages from ipv4:10.244.4.249:37536
+[17:45:11 INF] Pong counter is 6
+[17:45:12 DBG] Statistics: Actor Count 1
+[17:45:12 DBG] Requesting ping/Worker1/101 Message { "Counter": 7 }
+[17:45:12 DBG] Requesting Worker1/101-ping Message { "Counter": 7 } - Got PID 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 from PidCache
+[17:45:12 INF] PingGrain.HandlePing
+[17:45:12 DBG] 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 Responding to 10.244.3.67:46815/$21 with message { "Counter": 8, "Success": true }
+[17:45:12 INF] Ping counter is 8
+[17:45:12 DBG] Requesting pong/Worker2/101 Message { "Counter": 6 }
+[17:45:12 DBG] Requesting Worker2/101-pong Message { "Counter": 6 } - Got PID 10.244.4.249:35141/placement-activator/pong/Worker2/101$5 from PidCache
+[17:45:12 DBG] [EndpointWriterMailbox] received User Message {"Header": [], "Message": {"Counter": 6, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$22", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:12 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: False HasUserMessages: True Suspended: False
+[17:45:12 DBG] [EndpointWriterMailbox] Processing User Message {"Header": [], "Message": {"Counter": 6, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$22", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:12 DBG] [EndpointWriterMailbox] Calling message invoker
+[17:45:12 DBG] [EndpointReader] Received a batch of 1 messages from ipv4:10.244.4.249:37536
+[17:45:12 INF] Pong counter is 7
+[17:45:13 DBG] Requesting ping/Worker1/101 Message { "Counter": 8 }
+[17:45:13 DBG] Requesting Worker1/101-ping Message { "Counter": 8 } - Got PID 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 from PidCache
+[17:45:13 INF] PingGrain.HandlePing
+[17:45:13 DBG] 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 Responding to 10.244.3.67:46815/$23 with message { "Counter": 9, "Success": true }
+[17:45:13 INF] Ping counter is 9
+[17:45:13 DBG] Requesting pong/Worker2/101 Message { "Counter": 7 }
+[17:45:13 DBG] Requesting Worker2/101-pong Message { "Counter": 7 } - Got PID 10.244.4.249:35141/placement-activator/pong/Worker2/101$5 from PidCache
+[17:45:13 DBG] [EndpointWriterMailbox] received User Message {"Header": [], "Message": {"Counter": 7, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$24", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:13 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: False HasUserMessages: True Suspended: False
+[17:45:13 DBG] [EndpointWriterMailbox] Processing User Message {"Header": [], "Message": {"Counter": 7, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$24", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:13 DBG] [EndpointWriterMailbox] Calling message invoker
+[17:45:13 DBG] [EndpointReader] Received a batch of 1 messages from ipv4:10.244.4.249:37536
+[17:45:13 INF] Pong counter is 8
+[17:45:14 DBG] Requesting ping/Worker1/101 Message { "Counter": 9 }
+[17:45:14 DBG] Requesting Worker1/101-ping Message { "Counter": 9 } - Got PID 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 from PidCache
+[17:45:14 INF] PingGrain.HandlePing
+[17:45:14 DBG] 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 Responding to 10.244.3.67:46815/$25 with message { "Counter": 10, "Success": true }
+[17:45:14 INF] Ping counter is 10
+[17:45:14 DBG] Requesting pong/Worker2/101 Message { "Counter": 8 }
+[17:45:14 DBG] Requesting Worker2/101-pong Message { "Counter": 8 } - Got PID 10.244.4.249:35141/placement-activator/pong/Worker2/101$5 from PidCache
+[17:45:14 DBG] [EndpointWriterMailbox] received User Message {"Header": [], "Message": {"Counter": 8, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$26", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:14 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: False HasUserMessages: True Suspended: False
+[17:45:14 DBG] [EndpointWriterMailbox] Processing User Message {"Header": [], "Message": {"Counter": 8, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$26", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:14 DBG] [EndpointWriterMailbox] Calling message invoker
+[17:45:14 DBG] [EndpointReader] Received a batch of 1 messages from ipv4:10.244.4.249:37536
+[17:45:14 INF] Pong counter is 9
+[17:45:15 DBG] Requesting ping/Worker1/101 Message { "Counter": 10 }
+[17:45:15 DBG] Requesting Worker1/101-ping Message { "Counter": 10 } - Got PID 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 from PidCache
+[17:45:15 INF] PingGrain.HandlePing
+[17:45:15 DBG] 10.244.3.67:46815/placement-activator/ping/Worker1/101$5 Responding to 10.244.3.67:46815/$27 with message { "Counter": 11, "Success": true }
+[17:45:15 INF] Ping counter is 11
+[17:45:15 DBG] Requesting pong/Worker2/101 Message { "Counter": 9 }
+[17:45:15 DBG] Requesting Worker2/101-pong Message { "Counter": 9 } - Got PID 10.244.4.249:35141/placement-activator/pong/Worker2/101$5 from PidCache
+[17:45:15 DBG] [EndpointWriterMailbox] received User Message {"Header": [], "Message": {"Counter": 9, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$28", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:15 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: False HasUserMessages: True Suspended: False
+[17:45:15 DBG] [EndpointWriterMailbox] Processing User Message {"Header": [], "Message": {"Counter": 9, "$type": "PongCmd"}, "Target": {"Address": "10.244.4.249:35141", "Id": "placement-activator/pong/Worker2/101$5", "$type": "PID"}, "Sender": {"Address": "10.244.3.67:46815", "Id": "$28", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:45:15 DBG] [EndpointWriterMailbox] Calling message invoker
+[17:45:15 DBG] [EndpointReader] Received a batch of 1 messages from ipv4:10.244.4.249:37536
+[17:45:15 INF] Pong counter is 10
+
+
+

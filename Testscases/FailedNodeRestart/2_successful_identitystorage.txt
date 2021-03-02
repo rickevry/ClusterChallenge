@@ -1,0 +1,6 @@
+db.PID.find({})
+{ "_id" : "MyCluster/pong/Worker2/101", "Identity" : "Worker2/101", "UniqueIdentity" : "placement-activator/pong/Worker2/101$5", "Kind" : "pong", "Address" : "10.244.4.249:35141", "MemberId" : "14c768b715bd42ef8cb0d6b04a94c009", "Revision" : 2 }
+{ "_id" : "MyCluster/ping/Worker1/101", "Identity" : "Worker1/101", "UniqueIdentity" : "placement-activator/ping/Worker1/101$5", "Kind" : "ping", "Address" : "10.244.3.67:46815", "MemberId" : "76b3db92faad4e4caf079f2f1fc2480d", "Revision" : 2 }
+
+
+
