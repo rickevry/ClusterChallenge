@@ -6,7 +6,7 @@ Test bench to run tests against a Kubernetes cluster.
 - Two nodes are deployed (Worker1 and Worker2)
 - Worker1 is successfully sending and receiveing messages to/from Worker2
 - Worker2 is restarted (2-6 second downtime)
-- Worker1 fails to connect to restarted Worker2
+- Worker1 fails to reconnect to restarted Worker2
 
 ### Log files
 
