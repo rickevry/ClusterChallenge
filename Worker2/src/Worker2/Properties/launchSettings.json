@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "DAM2.Core.Actors": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Local",
+        "ASPNETCORE_ENVIRONMENT": "Local"
+      }
+    }
+  }
+}

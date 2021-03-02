@@ -1,0 +1,23 @@
+syntax = "proto3";
+package actor.pingpong;
+option csharp_namespace = "PingPong";
+
+message PingCmd {
+	int32 Counter = 1;
+}
+
+message PingResponse {
+	int32 Counter = 1;
+	bool Success = 2;
+	string ErrorMessage = 3;
+}
+
+message PongCmd {
+	int32 Counter = 1;
+}
+
+message PongResponse {
+	int32 Counter = 1;
+	bool Success = 2;
+	string ErrorMessage = 3;
+}

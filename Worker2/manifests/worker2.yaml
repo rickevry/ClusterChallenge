@@ -1,0 +1,60 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: clusterchallenge
+  name: worker2
+  labels:
+    app: worker2
+spec:
+  clusterIP: None
+  ports:
+  - port: 80
+    name: http
+  - port: 443
+    name: https
+  selector:
+    app: worker2
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  namespace: clusterchallenge
+  name: worker2
+  labels:
+    app: worker2
+spec:
+  serviceName: worker2
+  replicas: 1
+  selector:
+    matchLabels:
+      app: worker2
+  template:
+    metadata:
+      labels:
+        app: worker2
+    spec:
+      terminationGracePeriodSeconds: 31
+      containers:
+      - name: worker2
+        image: rickevry/cluster-challenge-worker2:1.0
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        - containerPort: 443
+          protocol: TCP
+        env:
+        - name: PROTOHOST
+          valueFrom:
+            fieldRef:
+              fieldPath: status.podIP
+        - name: ClusterSettings__PIDConnectionString
+          value: "mongodb://admin:password@mongodb:27017/?authSource=admin"
+        - name: CLusterSettings__PIDDatabaseName
+          value: "ProtoMongo"
+        - name: ClusterSettings__PIDCollectionName
+          value: "PID"
+        - name: ClusterSettings__ClusterPort
+          value: "0"
+        - name: ClusterSettings__ClusterHost
+          value: "protohost"

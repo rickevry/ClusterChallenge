@@ -1,0 +1,22 @@
+syntax = "proto3";
+package actor.poisonpill;
+option csharp_namespace = "PoisonPill";
+
+message BroadcastPoison {
+}
+
+message RestartPoison {
+}
+
+message ExceptionPoison {
+}
+
+message NoAnswerPoison {
+}
+
+message SleepPoison {
+}
+
+message PoisonResponse {
+}
+
