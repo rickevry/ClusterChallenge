@@ -21,7 +21,7 @@ Test bench to run tests against a Kubernetes cluster.
 [4]: <https://raw.githubusercontent.com/rickevry/ClusterChallenge/main/Testscases/FailedNodeRestart/4_failed_identitystorage.txt?token=AAOR45O47BICDTX6QI4N7Z3AI7DPK>
 
 ### Prebuilt containers (DockerHub)
-rickevry/cluster-challenge-worker1:1.0
-rickevry/cluster-challenge-worker2:1.0
+- rickevry/cluster-challenge-worker1:1.0
+- rickevry/cluster-challenge-worker2:1.0
 
 
