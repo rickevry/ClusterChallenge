@@ -1,0 +1,237 @@
+[13:07:56 ERR] MemberList did not find any activator for kind 'pong'
+[13:07:56 DBG] 10.10.1.169:61143/$2 Responding to 10.10.1.169:61143/$43 with message Proto.Cluster.Identity.PidResult
+[13:07:56 DBG] Requesting Worker2/101-pong Message { "Counter": 1 } - Did not get PID from IdentityLookup
+[13:07:56 ERR] MemberList did not find any activator for kind 'pong'
+[13:07:56 DBG] 10.10.1.169:61143/$2 Responding to 10.10.1.169:61143/$44 with message Proto.Cluster.Identity.PidResult
+[13:07:56 DBG] Requesting Worker2/101-pong Message { "Counter": 1 } - Did not get PID from IdentityLookup
+[13:07:56 ERR] MemberList did not find any activator for kind 'pong'
+[13:07:56 DBG] 10.10.1.169:61143/$2 Responding to 10.10.1.169:61143/$45 with message Proto.Cluster.Identity.PidResult
+[13:07:56 DBG] Requesting Worker2/101-pong Message { "Counter": 1 } - Did not get PID from IdentityLookup
+[13:07:56 ERR] MemberList did not find any activator for kind 'pong'
+[13:07:56 DBG] 10.10.1.169:61143/$2 Responding to 10.10.1.169:61143/$46 with message Proto.Cluster.Identity.PidResult
+[13:07:56 DBG] Requesting Worker2/101-pong Message { "Counter": 1 } - Did not get PID from IdentityLookup
+[13:07:57 ERR] MemberList did not find any activator for kind 'pong'
+[13:07:57 DBG] 10.10.1.169:61143/$2 Responding to 10.10.1.169:61143/$47 with message Proto.Cluster.Identity.PidResult
+[13:07:57 DBG] Requesting Worker2/101-pong Message { "Counter": 1 } - Did not get PID from IdentityLookup
+[13:07:57 DBG] Statistics: Actor Count 1
+[13:07:57 ERR] MemberList did not find any activator for kind 'pong'
+[13:07:57 DBG] 10.10.1.169:61143/$2 Responding to 10.10.1.169:61143/$48 with message Proto.Cluster.Identity.PidResult
+[13:07:57 DBG] Requesting Worker2/101-pong Message { "Counter": 1 } - Did not get PID from IdentityLookup
+[13:07:58 ERR] MemberList did not find any activator for kind 'pong'
+[13:07:58 DBG] 10.10.1.169:61143/$2 Responding to 10.10.1.169:61143/$49 with message Proto.Cluster.Identity.PidResult
+[13:07:58 DBG] Requesting Worker2/101-pong Message { "Counter": 1 } - Did not get PID from IdentityLookup
+[13:07:58 ERR] MemberList did not find any activator for kind 'pong'
+[13:07:58 DBG] 10.10.1.169:61143/$2 Responding to 10.10.1.169:61143/$50 with message Proto.Cluster.Identity.PidResult
+[13:07:58 DBG] Requesting Worker2/101-pong Message { "Counter": 1 } - Did not get PID from IdentityLookup
+[13:07:58 DBG] Got status updates from Consul
+[13:07:58 DBG] Updating Cluster Topology
+[13:07:58 DBG] Published ClusterTopology event { "eventId": "195", "members": [ { "host": "10.10.1.169", "port": 61143, "id": "e3158deca88d4c7482153b511807d2d4", "kinds": [ "ping", "poison1" ] } ] }
+[13:07:58 DBG] Got status updates from Consul
+[13:07:58 DBG] Updating Cluster Topology
+[13:07:58 DBG] Published ClusterTopology event { "eventId": "196", "members": [ { "host": "10.10.1.169", "port": 61143, "id": "e3158deca88d4c7482153b511807d2d4", "kinds": [ "ping", "poison1" ] }, { "host": "10.10.1.169", "port": 61164, "id": "9b835ca08577410e8d46df57d7cc4921", "kinds": [ "pong", "poison2" ] } ], "joined": [ { "host": "10.10.1.169", "port": 61164, "id": "9b835ca08577410e8d46df57d7cc4921" } ] }
+[13:07:58 INF] Cluster members joined ["{ \"host\": \"10.10.1.169\", \"port\": 61164, \"id\": \"9b835ca08577410e8d46df57d7cc4921\" }"]
+[13:07:58 DBG] Got lock on first try for pong/Worker2/101
+[13:07:58 DBG] Storing placement lookup for Worker2/101 pong
+[13:07:58 DBG] [EndpointManager] Requesting new endpoint for 10.10.1.169:61164
+[13:07:58 DBG] [EndpointWriterMailbox] received System Message {"$type": "Started"}
+[13:07:58 DBG] [EndpointManager] Created new endpoint for 10.10.1.169:61164
+[13:07:58 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: False Suspended: False
+[13:07:58 DBG] [EndpointWriterMailbox] received User Message {"Header": [], "Message": {"Kind": "pong", "Identity": "Worker2/101", "ClusterIdentity": {"Identity": "Worker2/101", "Kind": "pong", "$type": "ClusterIdentity"}, "RequestId": "3db121a7-ee89-46da-ab4b-b56a620a8e13", "$type": "ActivationRequest"}, "Target": {"Address": "10.10.1.169:61164", "Id": "placement-activator", "$type": "PID"}, "Sender": {"Address": "10.10.1.169:61143", "Id": "$52", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[13:07:58 DBG] [EndpointWriterMailbox] Processing System Message {"$type": "Started"}
+[13:07:58 DBG] [EndpointActor] Connecting to address 10.10.1.169:61164
+[13:07:58 DBG] [EndpointActor] Created channel and client for address 10.10.1.169:61164
+[13:07:59 DBG] [EndpointActor] Connected client for address 10.10.1.169:61164
+[13:07:59 DBG] [EndpointActor] Created reader for address 10.10.1.169:61164
+[13:07:59 DBG] [EndpointWriterMailbox] received System Message {"Address": "10.10.1.169:61164", "$type": "EndpointConnectedEvent"}
+[13:07:59 DBG] [EndpointActor] Connected to address 10.10.1.169:61164
+[13:07:59 DBG] [EndpointWriterMailbox] Processing User Message {"Header": [], "Message": {"Kind": "pong", "Identity": "Worker2/101", "ClusterIdentity": {"Identity": "Worker2/101", "Kind": "pong", "$type": "ClusterIdentity"}, "RequestId": "3db121a7-ee89-46da-ab4b-b56a620a8e13", "$type": "ActivationRequest"}, "Target": {"Address": "10.10.1.169:61164", "Id": "placement-activator", "$type": "PID"}, "Sender": {"Address": "10.10.1.169:61143", "Id": "$52", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[13:07:59 DBG] [EndpointWriterMailbox] Calling message invoker
+[13:07:59 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: False Suspended: False
+[13:07:59 DBG] [EndpointWriterMailbox] Processing System Message {"Address": "10.10.1.169:61164", "$type": "EndpointConnectedEvent"}
+[13:07:59 DBG] Unknown system message EndpointConnectedEvent { Address = 10.10.1.169:61164 }
+[13:07:59 DBG] Remote PID request timeout {"Kind": "pong", "Identity": "Worker2/101", "ClusterIdentity": {"Identity": "Worker2/101", "Kind": "pong", "$type": "ClusterIdentity"}, "RequestId": "3db121a7-ee89-46da-ab4b-b56a620a8e13", "$type": "ActivationRequest"}
+[13:07:59 WRN] Failed to get PID from IIdentityLookup
+[13:07:59 ERR] Failed to get PID for pong/Worker2/101
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at MongoDB.Driver.Core.ConnectionPools.ExclusiveConnectionPool.AcquireConnectionAsync(CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.GetChannelAsync(CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteContext.InitializeAsync(CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteContext.CreateAsync(IWriteBinding binding, Boolean retryRequested, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.ExecuteAsync(IWriteBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteWriteOperationAsync[TResult](IWriteBinding binding, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteWriteOperationAsync[TResult](IClientSessionHandle session, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.DeleteManyAsync(FilterDefinition`1 filter, DeleteOptions options, Func`2 bulkWriteFuncAsync)
+   at Proto.Utils.AsyncSemaphore.WaitAsync[T](Func`1 producer)
+   at Proto.Cluster.Identity.IdentityStorageWorker.SpawnActivationAsync(Member activator, SpawnLock spawnLock, CancellationToken ct)
+   at Proto.Cluster.Identity.IdentityStorageWorker.GetWithGlobalLock(PID sender, ClusterIdentity clusterIdentity, CancellationToken ct)
+[13:07:59 DBG] [EndpointReader] Accepted connection request from ipv4:10.10.1.169:61170 to 10.10.1.169:61143
+[13:07:59 DBG] [EndpointReader] Received a batch of 1 messages from ipv4:10.10.1.169:61170
+[13:07:59 INF] [DeadLetter] could not deliver 'ActivationResponse:{ "pid": 10.10.1.169:61164/placement-activator/pong/Worker2/101$3 }' to '10.10.1.169:61143/$52' from 'null'
+[13:07:59 WRN] RequestAsync retried but failed for ClusterIdentity pong/Worker2/101
+[13:07:59 INF] Failed to call pong 2'
+[13:08:00 DBG] Requesting ping/Worker1/101 Message { "Counter": 3 }
+[13:08:00 DBG] Requesting Worker1/101-ping Message { "Counter": 3 } - Got PID 10.10.1.169:61143/placement-activator/ping/Worker1/101$5 from PidCache
+[13:08:00 INF] PingGrain.HandlePing
+[13:08:00 DBG] 10.10.1.169:61143/placement-activator/ping/Worker1/101$5 Responding to 10.10.1.169:61143/$54 with message { "Counter": 4, "Success": true }
+[13:08:00 INF] Ping counter is 4
+[13:08:00 DBG] Requesting pong/Worker2/101 Message { "Counter": 1 }
+[13:08:02 DBG] Statistics: Actor Count 1
+[13:08:05 WRN] Failed to get PID from IIdentityLookup
+[13:08:05 WRN] RequestAsync retried but failed for ClusterIdentity pong/Worker2/101
+[13:08:05 INF] Failed to call pong 3'
+[13:08:06 DBG] Requesting ping/Worker1/101 Message { "Counter": 4 }
+[13:08:06 DBG] Requesting Worker1/101-ping Message { "Counter": 4 } - Got PID 10.10.1.169:61143/placement-activator/ping/Worker1/101$5 from PidCache
+[13:08:06 INF] PingGrain.HandlePing
+[13:08:06 DBG] 10.10.1.169:61143/placement-activator/ping/Worker1/101$5 Responding to 10.10.1.169:61143/$56 with message { "Counter": 5, "Success": true }
+[13:08:06 INF] Ping counter is 5
+[13:08:06 DBG] Requesting pong/Worker2/101 Message { "Counter": 1 }
+[13:08:07 DBG] Statistics: Actor Count 1
+[13:08:11 WRN] Failed to get PID from IIdentityLookup
+[13:08:11 WRN] RequestAsync retried but failed for ClusterIdentity pong/Worker2/101
+[13:08:11 INF] Failed to call pong 4'
+[13:08:12 DBG] 10.10.1.169:61143/ClusterHeartBeat Responding to 10.10.1.169:61143/$58 with message { "actorCount": 10 }
+[13:08:12 DBG] Heartbeat request for member id e3158deca88d4c7482153b511807d2d4 Address 10.10.1.169:61143 succeeded
+[13:08:12 DBG] [EndpointWriterMailbox] received User Message {"Header": [], "Message": {"$type": "HeartbeatRequest"}, "Target": {"Address": "10.10.1.169:61164", "Id": "ClusterHeartBeat", "$type": "PID"}, "Sender": {"Address": "10.10.1.169:61143", "Id": "$59", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[13:08:12 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: False HasUserMessages: True Suspended: False
+[13:08:12 DBG] [EndpointWriterMailbox] Processing User Message {"Header": [], "Message": {"$type": "HeartbeatRequest"}, "Target": {"Address": "10.10.1.169:61164", "Id": "ClusterHeartBeat", "$type": "PID"}, "Sender": {"Address": "10.10.1.169:61143", "Id": "$59", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[13:08:12 DBG] [EndpointWriterMailbox] Calling message invoker
+[13:08:12 DBG] Statistics: Actor Count 1
+[13:08:12 DBG] [EndpointReader] Received a batch of 1 messages from ipv4:10.10.1.169:61170
+[13:08:12 DBG] Heartbeat request for member id 9b835ca08577410e8d46df57d7cc4921 Address 10.10.1.169:61164 succeeded
+[13:08:12 DBG] Requesting ping/Worker1/101 Message { "Counter": 5 }
+[13:08:12 DBG] Requesting Worker1/101-ping Message { "Counter": 5 } - Got PID 10.10.1.169:61143/placement-activator/ping/Worker1/101$5 from PidCache
+[13:08:12 INF] PingGrain.HandlePing
+[13:08:12 DBG] 10.10.1.169:61143/placement-activator/ping/Worker1/101$5 Responding to 10.10.1.169:61143/$60 with message { "Counter": 6, "Success": true }
+[13:08:12 INF] Ping counter is 6
+[13:08:12 DBG] Requesting pong/Worker2/101 Message { "Counter": 1 }
+[13:08:17 DBG] Statistics: Actor Count 1
+[13:08:17 WRN] Failed to get PID from IIdentityLookup
+[13:08:17 WRN] RequestAsync retried but failed for ClusterIdentity pong/Worker2/101
+[13:08:17 INF] Failed to call pong 5'
+[13:08:18 DBG] Requesting ping/Worker1/101 Message { "Counter": 6 }
+[13:08:18 DBG] Requesting Worker1/101-ping Message { "Counter": 6 } - Got PID 10.10.1.169:61143/placement-activator/ping/Worker1/101$5 from PidCache
+[13:08:18 INF] PingGrain.HandlePing
+[13:08:18 DBG] 10.10.1.169:61143/placement-activator/ping/Worker1/101$5 Responding to 10.10.1.169:61143/$62 with message { "Counter": 7, "Success": true }
+[13:08:18 INF] Ping counter is 7
+[13:08:18 DBG] Requesting pong/Worker2/101 Message { "Counter": 1 }
+[13:08:19 DBG] Got status updates from Consul
+[13:08:19 DBG] Updating Cluster Topology
+[13:08:19 DBG] Published ClusterTopology event { "eventId": "196", "members": [ { "host": "10.10.1.169", "port": 61143, "id": "e3158deca88d4c7482153b511807d2d4", "kinds": [ "ping", "poison1" ] }, { "host": "10.10.1.169", "port": 61164, "id": "9b835ca08577410e8d46df57d7cc4921", "kinds": [ "pong", "poison2" ] } ] }
+[13:08:22 DBG] Statistics: Actor Count 1
+[13:08:23 WRN] Failed to get PID from IIdentityLookup
+[13:08:23 WRN] RequestAsync retried but failed for ClusterIdentity pong/Worker2/101
+[13:08:23 INF] Failed to call pong 6'
+[13:08:24 DBG] Requesting ping/Worker1/101 Message { "Counter": 7 }
+[13:08:24 DBG] Requesting Worker1/101-ping Message { "Counter": 7 } - Got PID 10.10.1.169:61143/placement-activator/ping/Worker1/101$5 from PidCache
+[13:08:24 INF] PingGrain.HandlePing
+[13:08:24 DBG] 10.10.1.169:61143/placement-activator/ping/Worker1/101$5 Responding to 10.10.1.169:61143/$64 with message { "Counter": 8, "Success": true }
+[13:08:24 INF] Ping counter is 8
+[13:08:24 DBG] Requesting pong/Worker2/101 Message { "Counter": 1 }
+[13:08:25 DBG] [EndpointReader] Stream closed by ipv4:10.10.1.169:61170
+[13:08:25 ERR] [EndpointActor] Lost connection to address 10.10.1.169:61164
+Grpc.Core.RpcException: Status(StatusCode="Unknown", Detail="Stream removed", DebugException="Grpc.Core.Internal.CoreErrorDetailException: {"created":"@1614859705.164000000","description":"Error received from peer ipv4:10.10.1.169:61164","file":"..\..\..\src\core\lib\surface\call.cc","file_line":1068,"grpc_message":"Stream removed","grpc_status":2}")
+   at Grpc.Core.Internal.ClientResponseStream`2.MoveNext(CancellationToken token)
+   at Proto.Remote.EndpointActor.<>c__DisplayClass16_0.<<ConnectAsync>b__0>d.MoveNext()
+[13:08:25 DBG] [EndpointWriterMailbox] received System Message {"Address": "10.10.1.169:61164", "Exception": {"Status": {"StatusCode": "Unknown", "Detail": "Stream removed", "DebugException": {"TargetSite": null, "StackTrace": null, "Message": "{\"created\":\"@1614859705.164000000\",\"description\":\"Error received from peer ipv4:10.10.1.169:61164\",\"file\":\"..\\..\\..\\src\\core\\lib\\surface\\call.cc\",\"file_line\":1068,\"grpc_message\":\"Stream removed\",\"grpc_status\":2}", "Data": [], "InnerException": null, "HelpLink": null, "Source": null, "HResult": -2146233088, "$type": "CoreErrorDetailException"}, "$type": "Status"}, "StatusCode": "Unknown", "Trailers": [], "TargetSite": "Void Throw()", "StackTrace": "   at Grpc.Core.Internal.ClientResponseStream`2.MoveNext(CancellationToken token)\r\n   at Proto.Remote.EndpointActor.<>c__DisplayClass16_0.<<ConnectAsync>b__0>d.MoveNext()", "Message": "Status(StatusCode=\"Unknown\", Detail=\"Stream removed\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1614859705.164000000\",\"description\":\"Error received from peer ipv4:10.10.1.169:61164\",\"file\":\"..\\..\\..\\src\\core\\lib\\surface\\call.cc\",\"file_line\":1068,\"grpc_message\":\"Stream removed\",\"grpc_status\":2}\")", "Data": [], "InnerException": null, "HelpLink": null, "Source": "System.Private.CoreLib", "HResult": -2146233088, "$type": "RpcException"}, "$type": "EndpointErrorEvent"}
+[13:08:25 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: False Suspended: False
+[13:08:25 DBG] [EndpointWriterMailbox] Processing System Message {"Address": "10.10.1.169:61164", "Exception": {"Status": {"StatusCode": "Unknown", "Detail": "Stream removed", "DebugException": {"TargetSite": null, "StackTrace": null, "Message": "{\"created\":\"@1614859705.164000000\",\"description\":\"Error received from peer ipv4:10.10.1.169:61164\",\"file\":\"..\\..\\..\\src\\core\\lib\\surface\\call.cc\",\"file_line\":1068,\"grpc_message\":\"Stream removed\",\"grpc_status\":2}", "Data": [], "InnerException": null, "HelpLink": null, "Source": null, "HResult": -2146233088, "$type": "CoreErrorDetailException"}, "$type": "Status"}, "StatusCode": "Unknown", "Trailers": [], "TargetSite": "Void Throw()", "StackTrace": "   at Grpc.Core.Internal.ClientResponseStream`2.MoveNext(CancellationToken token)\r\n   at Proto.Remote.EndpointActor.<>c__DisplayClass16_0.<<ConnectAsync>b__0>d.MoveNext()", "Message": "Status(StatusCode=\"Unknown\", Detail=\"Stream removed\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1614859705.164000000\",\"description\":\"Error received from peer ipv4:10.10.1.169:61164\",\"file\":\"..\\..\\..\\src\\core\\lib\\surface\\call.cc\",\"file_line\":1068,\"grpc_message\":\"Stream removed\",\"grpc_status\":2}\")", "Data": [], "InnerException": null, "HelpLink": null, "Source": "System.Private.CoreLib", "HResult": -2146233088, "$type": "RpcException"}, "$type": "EndpointErrorEvent"}
+[13:08:25 DBG] [EndpointWriterMailbox] received System Message {"$type": "SuspendMailbox"}
+[13:08:25 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: False Suspended: True
+[13:08:25 DBG] [EndpointWriterMailbox] Processing System Message {"$type": "SuspendMailbox"}
+[13:08:25 WRN] Restarting 10.10.1.169:61143/endpoint-10.10.1.169:61164 after 00:00:00.4550000 because of RpcException
+Grpc.Core.RpcException: Status(StatusCode="Unknown", Detail="Stream removed", DebugException="Grpc.Core.Internal.CoreErrorDetailException: {"created":"@1614859705.164000000","description":"Error received from peer ipv4:10.10.1.169:61164","file":"..\..\..\src\core\lib\surface\call.cc","file_line":1068,"grpc_message":"Stream removed","grpc_status":2}")
+   at Proto.Remote.EndpointActor.EndpointError(EndpointErrorEvent evt)
+   at Proto.Remote.EndpointActor.ConnectedAsync(IContext context)
+   at Proto.Behavior.ReceiveAsync(IContext context)
+   at Proto.Remote.EndpointActor.ReceiveAsync(IContext context)
+   at Proto.Context.ActorContext.ProcessMessageAsync(Object msg)
+   at Proto.Context.ActorContext.InvokeUserMessageAsync(Object msg)
+   at Proto.Remote.EndpointWriterMailbox.RunAsync()
+[13:08:25 DBG] [EndpointWriterMailbox] received System Message {"Reason": {"Status": {"StatusCode": "Unknown", "Detail": "Stream removed", "DebugException": {"TargetSite": null, "StackTrace": null, "Message": "{\"created\":\"@1614859705.164000000\",\"description\":\"Error received from peer ipv4:10.10.1.169:61164\",\"file\":\"..\\..\\..\\src\\core\\lib\\surface\\call.cc\",\"file_line\":1068,\"grpc_message\":\"Stream removed\",\"grpc_status\":2}", "Data": [], "InnerException": null, "HelpLink": null, "Source": null, "HResult": -2146233088, "$type": "CoreErrorDetailException"}, "$type": "Status"}, "StatusCode": "Unknown", "Trailers": [], "TargetSite": "Void Throw()", "StackTrace": "   at Proto.Remote.EndpointActor.EndpointError(EndpointErrorEvent evt)\r\n   at Proto.Remote.EndpointActor.ConnectedAsync(IContext context)\r\n   at Proto.Behavior.ReceiveAsync(IContext context)\r\n   at Proto.Remote.EndpointActor.ReceiveAsync(IContext context)\r\n   at Proto.Context.ActorContext.ProcessMessageAsync(Object msg)\r\n   at Proto.Context.ActorContext.InvokeUserMessageAsync(Object msg)\r\n   at Proto.Remote.EndpointWriterMailbox.RunAsync()", "Message": "Status(StatusCode=\"Unknown\", Detail=\"Stream removed\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1614859705.164000000\",\"description\":\"Error received from peer ipv4:10.10.1.169:61164\",\"file\":\"..\\..\\..\\src\\core\\lib\\surface\\call.cc\",\"file_line\":1068,\"grpc_message\":\"Stream removed\",\"grpc_status\":2}\")", "Data": [], "InnerException": null, "HelpLink": null, "Source": "System.Private.CoreLib", "HResult": -2146233088, "$type": "RpcException"}, "$type": "Restart"}
+[13:08:25 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: False Suspended: True
+[13:08:26 DBG] [EndpointWriterMailbox] Processing System Message {"Reason": {"Status": {"StatusCode": "Unknown", "Detail": "Stream removed", "DebugException": {"TargetSite": null, "StackTrace": null, "Message": "{\"created\":\"@1614859705.164000000\",\"description\":\"Error received from peer ipv4:10.10.1.169:61164\",\"file\":\"..\\..\\..\\src\\core\\lib\\surface\\call.cc\",\"file_line\":1068,\"grpc_message\":\"Stream removed\",\"grpc_status\":2}", "Data": [], "InnerException": null, "HelpLink": null, "Source": null, "HResult": -2146233088, "$type": "CoreErrorDetailException"}, "$type": "Status"}, "StatusCode": "Unknown", "Trailers": [], "TargetSite": "Void Throw()", "StackTrace": "   at Proto.Remote.EndpointActor.EndpointError(EndpointErrorEvent evt)\r\n   at Proto.Remote.EndpointActor.ConnectedAsync(IContext context)\r\n   at Proto.Behavior.ReceiveAsync(IContext context)\r\n   at Proto.Remote.EndpointActor.ReceiveAsync(IContext context)\r\n   at Proto.Context.ActorContext.ProcessMessageAsync(Object msg)\r\n   at Proto.Context.ActorContext.InvokeUserMessageAsync(Object msg)\r\n   at Proto.Remote.EndpointWriterMailbox.RunAsync()", "Message": "Status(StatusCode=\"Unknown\", Detail=\"Stream removed\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1614859705.164000000\",\"description\":\"Error received from peer ipv4:10.10.1.169:61164\",\"file\":\"..\\..\\..\\src\\core\\lib\\surface\\call.cc\",\"file_line\":1068,\"grpc_message\":\"Stream removed\",\"grpc_status\":2}\")", "Data": [], "InnerException": null, "HelpLink": null, "Source": "System.Private.CoreLib", "HResult": -2146233088, "$type": "RpcException"}, "$type": "Restart"}
+[13:08:26 DBG] [EndpointActor] Handle terminated address 10.10.1.169:61164
+[13:08:26 DBG] [EndpointWriterMailbox] received System Message {"$type": "ResumeMailbox"}
+[13:08:26 DBG] [EndpointActor] Connecting to address 10.10.1.169:61164
+[13:08:26 DBG] [EndpointActor] Created channel and client for address 10.10.1.169:61164
+[13:08:27 DBG] Statistics: Actor Count 1
+[13:08:28 DBG] [EndpointWriterMailbox] received System Message {"$type": "SuspendMailbox"}
+[13:08:28 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: False Suspended: True
+[13:08:28 DBG] [EndpointWriterMailbox] Processing System Message {"$type": "ResumeMailbox"}
+[13:08:28 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: False Suspended: True
+[13:08:28 DBG] [EndpointWriterMailbox] Processing System Message {"$type": "SuspendMailbox"}
+[13:08:28 WRN] Restarting 10.10.1.169:61143/endpoint-10.10.1.169:61164 after 00:00:00.5790000 because of RpcException
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="failed to connect to all addresses", DebugException="Grpc.Core.Internal.CoreErrorDetailException: {"created":"@1614859708.075000000","description":"Failed to pick subchannel","file":"..\..\..\src\core\ext\filters\client_channel\client_channel.cc","file_line":5391,"referenced_errors":[{"created":"@1614859708.075000000","description":"failed to connect to all addresses","file":"..\..\..\src\core\ext\filters\client_channel\lb_policy\pick_first\pick_first.cc","file_line":398,"grpc_status":14}]}")
+   at Proto.Remote.EndpointActor.ConnectAsync(IContext context)
+   at Proto.Context.ActorContext.RestartAsync()
+   at Proto.Context.ActorContext.StopAllChildren()
+   at Proto.Context.ActorContext.HandleRestartAsync()
+   at Proto.Remote.EndpointWriterMailbox.RunAsync()
+[13:08:28 DBG] [EndpointWriterMailbox] received System Message {"Reason": {"Status": {"StatusCode": "Unavailable", "Detail": "failed to connect to all addresses", "DebugException": {"TargetSite": null, "StackTrace": null, "Message": "{\"created\":\"@1614859708.075000000\",\"description\":\"Failed to pick subchannel\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\client_channel.cc\",\"file_line\":5391,\"referenced_errors\":[{\"created\":\"@1614859708.075000000\",\"description\":\"failed to connect to all addresses\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\lb_policy\\pick_first\\pick_first.cc\",\"file_line\":398,\"grpc_status\":14}]}", "Data": [], "InnerException": null, "HelpLink": null, "Source": null, "HResult": -2146233088, "$type": "CoreErrorDetailException"}, "$type": "Status"}, "StatusCode": "Unavailable", "Trailers": [], "TargetSite": "Void Throw()", "StackTrace": "   at Proto.Remote.EndpointActor.ConnectAsync(IContext context)\r\n   at Proto.Context.ActorContext.RestartAsync()\r\n   at Proto.Context.ActorContext.StopAllChildren()\r\n   at Proto.Context.ActorContext.HandleRestartAsync()\r\n   at Proto.Remote.EndpointWriterMailbox.RunAsync()", "Message": "Status(StatusCode=\"Unavailable\", Detail=\"failed to connect to all addresses\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1614859708.075000000\",\"description\":\"Failed to pick subchannel\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\client_channel.cc\",\"file_line\":5391,\"referenced_errors\":[{\"created\":\"@1614859708.075000000\",\"description\":\"failed to connect to all addresses\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\lb_policy\\pick_first\\pick_first.cc\",\"file_line\":398,\"grpc_status\":14}]}\")", "Data": [], "InnerException": null, "HelpLink": null, "Source": "System.Private.CoreLib", "HResult": -2146233088, "$type": "RpcException"}, "$type": "Restart"}
+[13:08:28 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: False Suspended: True
+[13:08:28 DBG] [EndpointWriterMailbox] Processing System Message {"Reason": {"Status": {"StatusCode": "Unavailable", "Detail": "failed to connect to all addresses", "DebugException": {"TargetSite": null, "StackTrace": null, "Message": "{\"created\":\"@1614859708.075000000\",\"description\":\"Failed to pick subchannel\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\client_channel.cc\",\"file_line\":5391,\"referenced_errors\":[{\"created\":\"@1614859708.075000000\",\"description\":\"failed to connect to all addresses\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\lb_policy\\pick_first\\pick_first.cc\",\"file_line\":398,\"grpc_status\":14}]}", "Data": [], "InnerException": null, "HelpLink": null, "Source": null, "HResult": -2146233088, "$type": "CoreErrorDetailException"}, "$type": "Status"}, "StatusCode": "Unavailable", "Trailers": [], "TargetSite": "Void Throw()", "StackTrace": "   at Proto.Remote.EndpointActor.ConnectAsync(IContext context)\r\n   at Proto.Context.ActorContext.RestartAsync()\r\n   at Proto.Context.ActorContext.StopAllChildren()\r\n   at Proto.Context.ActorContext.HandleRestartAsync()\r\n   at Proto.Remote.EndpointWriterMailbox.RunAsync()", "Message": "Status(StatusCode=\"Unavailable\", Detail=\"failed to connect to all addresses\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1614859708.075000000\",\"description\":\"Failed to pick subchannel\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\client_channel.cc\",\"file_line\":5391,\"referenced_errors\":[{\"created\":\"@1614859708.075000000\",\"description\":\"failed to connect to all addresses\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\lb_policy\\pick_first\\pick_first.cc\",\"file_line\":398,\"grpc_status\":14}]}\")", "Data": [], "InnerException": null, "HelpLink": null, "Source": "System.Private.CoreLib", "HResult": -2146233088, "$type": "RpcException"}, "$type": "Restart"}
+[13:08:28 DBG] [EndpointWriterMailbox] received System Message {"$type": "ResumeMailbox"}
+[13:08:28 DBG] [EndpointActor] Connecting to address 10.10.1.169:61164
+[13:08:28 DBG] [EndpointActor] Created channel and client for address 10.10.1.169:61164
+[13:08:29 WRN] Failed to get PID from IIdentityLookup
+[13:08:29 WRN] RequestAsync retried but failed for ClusterIdentity pong/Worker2/101
+[13:08:29 DBG] Got status updates from Consul
+[13:08:29 INF] Failed to call pong 7'
+[13:08:29 DBG] Updating Cluster Topology
+[13:08:29 DBG] Published ClusterTopology event { "eventId": "199", "members": [ { "host": "10.10.1.169", "port": 61143, "id": "e3158deca88d4c7482153b511807d2d4", "kinds": [ "ping", "poison1" ] }, { "host": "10.10.1.169", "port": 61164, "id": "9b835ca08577410e8d46df57d7cc4921", "kinds": [ "pong", "poison2" ] } ] }
+[13:08:29 DBG] Got status updates from Consul
+[13:08:29 DBG] Updating Cluster Topology
+[13:08:29 DBG] Published ClusterTopology event { "eventId": "200", "members": [ { "host": "10.10.1.169", "port": 61143, "id": "e3158deca88d4c7482153b511807d2d4", "kinds": [ "ping", "poison1" ] }, { "host": "10.10.1.169", "port": 61194, "id": "609f57ef1b37445386fe7e75343f5d0d", "kinds": [ "poison2", "pong" ] }, { "host": "10.10.1.169", "port": 61164, "id": "9b835ca08577410e8d46df57d7cc4921", "kinds": [ "pong", "poison2" ] } ], "joined": [ { "host": "10.10.1.169", "port": 61194, "id": "609f57ef1b37445386fe7e75343f5d0d" } ] }
+[13:08:29 INF] Cluster members joined ["{ \"host\": \"10.10.1.169\", \"port\": 61194, \"id\": \"609f57ef1b37445386fe7e75343f5d0d\" }"]
+[13:08:30 DBG] [EndpointWriterMailbox] received System Message {"$type": "SuspendMailbox"}
+[13:08:30 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: False Suspended: True
+[13:08:30 DBG] [EndpointWriterMailbox] Processing System Message {"$type": "ResumeMailbox"}
+[13:08:30 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: False Suspended: True
+[13:08:30 DBG] [EndpointWriterMailbox] Processing System Message {"$type": "SuspendMailbox"}
+[13:08:30 DBG] Requesting ping/Worker1/101 Message { "Counter": 8 }
+[13:08:30 DBG] Requesting Worker1/101-ping Message { "Counter": 8 } - Got PID 10.10.1.169:61143/placement-activator/ping/Worker1/101$5 from PidCache
+[13:08:30 INF] PingGrain.HandlePing
+[13:08:30 DBG] 10.10.1.169:61143/placement-activator/ping/Worker1/101$5 Responding to 10.10.1.169:61143/$66 with message { "Counter": 9, "Success": true }
+[13:08:30 INF] Ping counter is 9
+[13:08:30 DBG] Requesting pong/Worker2/101 Message { "Counter": 1 }
+[13:08:31 WRN] Restarting 10.10.1.169:61143/endpoint-10.10.1.169:61164 after 00:00:00.6490000 because of RpcException
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="failed to connect to all addresses", DebugException="Grpc.Core.Internal.CoreErrorDetailException: {"created":"@1614859710.845000000","description":"Failed to pick subchannel","file":"..\..\..\src\core\ext\filters\client_channel\client_channel.cc","file_line":5391,"referenced_errors":[{"created":"@1614859710.845000000","description":"failed to connect to all addresses","file":"..\..\..\src\core\ext\filters\client_channel\lb_policy\pick_first\pick_first.cc","file_line":398,"grpc_status":14}]}")
+   at Proto.Remote.EndpointActor.ConnectAsync(IContext context)
+   at Proto.Context.ActorContext.RestartAsync()
+   at Proto.Context.ActorContext.StopAllChildren()
+   at Proto.Context.ActorContext.HandleRestartAsync()
+   at Proto.Remote.EndpointWriterMailbox.RunAsync()
+[13:08:31 DBG] [EndpointWriterMailbox] received System Message {"Reason": {"Status": {"StatusCode": "Unavailable", "Detail": "failed to connect to all addresses", "DebugException": {"TargetSite": null, "StackTrace": null, "Message": "{\"created\":\"@1614859710.845000000\",\"description\":\"Failed to pick subchannel\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\client_channel.cc\",\"file_line\":5391,\"referenced_errors\":[{\"created\":\"@1614859710.845000000\",\"description\":\"failed to connect to all addresses\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\lb_policy\\pick_first\\pick_first.cc\",\"file_line\":398,\"grpc_status\":14}]}", "Data": [], "InnerException": null, "HelpLink": null, "Source": null, "HResult": -2146233088, "$type": "CoreErrorDetailException"}, "$type": "Status"}, "StatusCode": "Unavailable", "Trailers": [], "TargetSite": "Void Throw()", "StackTrace": "   at Proto.Remote.EndpointActor.ConnectAsync(IContext context)\r\n   at Proto.Context.ActorContext.RestartAsync()\r\n   at Proto.Context.ActorContext.StopAllChildren()\r\n   at Proto.Context.ActorContext.HandleRestartAsync()\r\n   at Proto.Remote.EndpointWriterMailbox.RunAsync()", "Message": "Status(StatusCode=\"Unavailable\", Detail=\"failed to connect to all addresses\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1614859710.845000000\",\"description\":\"Failed to pick subchannel\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\client_channel.cc\",\"file_line\":5391,\"referenced_errors\":[{\"created\":\"@1614859710.845000000\",\"description\":\"failed to connect to all addresses\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\lb_policy\\pick_first\\pick_first.cc\",\"file_line\":398,\"grpc_status\":14}]}\")", "Data": [], "InnerException": null, "HelpLink": null, "Source": "System.Private.CoreLib", "HResult": -2146233088, "$type": "RpcException"}, "$type": "Restart"}
+[13:08:31 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: False Suspended: True
+[13:08:31 DBG] [EndpointWriterMailbox] Processing System Message {"Reason": {"Status": {"StatusCode": "Unavailable", "Detail": "failed to connect to all addresses", "DebugException": {"TargetSite": null, "StackTrace": null, "Message": "{\"created\":\"@1614859710.845000000\",\"description\":\"Failed to pick subchannel\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\client_channel.cc\",\"file_line\":5391,\"referenced_errors\":[{\"created\":\"@1614859710.845000000\",\"description\":\"failed to connect to all addresses\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\lb_policy\\pick_first\\pick_first.cc\",\"file_line\":398,\"grpc_status\":14}]}", "Data": [], "InnerException": null, "HelpLink": null, "Source": null, "HResult": -2146233088, "$type": "CoreErrorDetailException"}, "$type": "Status"}, "StatusCode": "Unavailable", "Trailers": [], "TargetSite": "Void Throw()", "StackTrace": "   at Proto.Remote.EndpointActor.ConnectAsync(IContext context)\r\n   at Proto.Context.ActorContext.RestartAsync()\r\n   at Proto.Context.ActorContext.StopAllChildren()\r\n   at Proto.Context.ActorContext.HandleRestartAsync()\r\n   at Proto.Remote.EndpointWriterMailbox.RunAsync()", "Message": "Status(StatusCode=\"Unavailable\", Detail=\"failed to connect to all addresses\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1614859710.845000000\",\"description\":\"Failed to pick subchannel\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\client_channel.cc\",\"file_line\":5391,\"referenced_errors\":[{\"created\":\"@1614859710.845000000\",\"description\":\"failed to connect to all addresses\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\lb_policy\\pick_first\\pick_first.cc\",\"file_line\":398,\"grpc_status\":14}]}\")", "Data": [], "InnerException": null, "HelpLink": null, "Source": "System.Private.CoreLib", "HResult": -2146233088, "$type": "RpcException"}, "$type": "Restart"}
+[13:08:31 DBG] [EndpointWriterMailbox] received System Message {"$type": "ResumeMailbox"}
+[13:08:31 DBG] [EndpointActor] Connecting to address 10.10.1.169:61164
+[13:08:31 DBG] [EndpointActor] Created channel and client for address 10.10.1.169:61164
+[13:08:32 DBG] Statistics: Actor Count 1
+[13:08:33 DBG] [EndpointWriterMailbox] received System Message {"$type": "SuspendMailbox"}
+[13:08:33 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: False Suspended: True
+[13:08:33 DBG] [EndpointWriterMailbox] Processing System Message {"$type": "ResumeMailbox"}
+[13:08:33 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: False Suspended: True
+[13:08:33 DBG] [EndpointWriterMailbox] Processing System Message {"$type": "SuspendMailbox"}
+[13:08:34 WRN] Restarting 10.10.1.169:61143/endpoint-10.10.1.169:61164 after 00:00:00.7890000 because of RpcException
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="failed to connect to all addresses", DebugException="Grpc.Core.Internal.CoreErrorDetailException: {"created":"@1614859713.601000000","description":"Failed to pick subchannel","file":"..\..\..\src\core\ext\filters\client_channel\client_channel.cc","file_line":5391,"referenced_errors":[{"created":"@1614859713.601000000","description":"failed to connect to all addresses","file":"..\..\..\src\core\ext\filters\client_channel\lb_policy\pick_first\pick_first.cc","file_line":398,"grpc_status":14}]}")
+   at Proto.Remote.EndpointActor.ConnectAsync(IContext context)
+   at Proto.Context.ActorContext.RestartAsync()
+   at Proto.Context.ActorContext.StopAllChildren()
+   at Proto.Context.ActorContext.HandleRestartAsync()
+   at Proto.Remote.EndpointWriterMailbox.RunAsync()
+[13:08:34 DBG] [EndpointWriterMailbox] received System Message {"Reason": {"Status": {"StatusCode": "Unavailable", "Detail": "failed to connect to all addresses", "DebugException": {"TargetSite": null, "StackTrace": null, "Message": "{\"created\":\"@1614859713.601000000\",\"description\":\"Failed to pick subchannel\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\client_channel.cc\",\"file_line\":5391,\"referenced_errors\":[{\"created\":\"@1614859713.601000000\",\"description\":\"failed to connect to all addresses\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\lb_policy\\pick_first\\pick_first.cc\",\"file_line\":398,\"grpc_status\":14}]}", "Data": [], "InnerException": null, "HelpLink": null, "Source": null, "HResult": -2146233088, "$type": "CoreErrorDetailException"}, "$type": "Status"}, "StatusCode": "Unavailable", "Trailers": [], "TargetSite": "Void Throw()", "StackTrace": "   at Proto.Remote.EndpointActor.ConnectAsync(IContext context)\r\n   at Proto.Context.ActorContext.RestartAsync()\r\n   at Proto.Context.ActorContext.StopAllChildren()\r\n   at Proto.Context.ActorContext.HandleRestartAsync()\r\n   at Proto.Remote.EndpointWriterMailbox.RunAsync()", "Message": "Status(StatusCode=\"Unavailable\", Detail=\"failed to connect to all addresses\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1614859713.601000000\",\"description\":\"Failed to pick subchannel\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\client_channel.cc\",\"file_line\":5391,\"referenced_errors\":[{\"created\":\"@1614859713.601000000\",\"description\":\"failed to connect to all addresses\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\lb_policy\\pick_first\\pick_first.cc\",\"file_line\":398,\"grpc_status\":14}]}\")", "Data": [], "InnerException": null, "HelpLink": null, "Source": "System.Private.CoreLib", "HResult": -2146233088, "$type": "RpcException"}, "$type": "Restart"}
+[13:08:34 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: False Suspended: True
+[13:08:34 DBG] [EndpointWriterMailbox] Processing System Message {"Reason": {"Status": {"StatusCode": "Unavailable", "Detail": "failed to connect to all addresses", "DebugException": {"TargetSite": null, "StackTrace": null, "Message": "{\"created\":\"@1614859713.601000000\",\"description\":\"Failed to pick subchannel\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\client_channel.cc\",\"file_line\":5391,\"referenced_errors\":[{\"created\":\"@1614859713.601000000\",\"description\":\"failed to connect to all addresses\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\lb_policy\\pick_first\\pick_first.cc\",\"file_line\":398,\"grpc_status\":14}]}", "Data": [], "InnerException": null, "HelpLink": null, "Source": null, "HResult": -2146233088, "$type": "CoreErrorDetailException"}, "$type": "Status"}, "StatusCode": "Unavailable", "Trailers": [], "TargetSite": "Void Throw()", "StackTrace": "   at Proto.Remote.EndpointActor.ConnectAsync(IContext context)\r\n   at Proto.Context.ActorContext.RestartAsync()\r\n   at Proto.Context.ActorContext.StopAllChildren()\r\n   at Proto.Context.ActorContext.HandleRestartAsync()\r\n   at Proto.Remote.EndpointWriterMailbox.RunAsync()", "Message": "Status(StatusCode=\"Unavailable\", Detail=\"failed to connect to all addresses\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1614859713.601000000\",\"description\":\"Failed to pick subchannel\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\client_channel.cc\",\"file_line\":5391,\"referenced_errors\":[{\"created\":\"@1614859713.601000000\",\"description\":\"failed to connect to all addresses\",\"file\":\"..\\..\\..\\src\\core\\ext\\filters\\client_channel\\lb_policy\\pick_first\\pick_first.cc\",\"file_line\":398,\"grpc_status\":14}]}\")", "Data": [], "InnerException": null, "HelpLink": null, "Source": "System.Private.CoreLib", "HResult": -2146233088, "$type": "RpcException"}, "$type": "Restart"}
+[13:08:34 DBG] [EndpointWriterMailbox] received System Message {"$type": "ResumeMailbox"}
+[13:08:34 DBG] [EndpointActor] Connecting to address 10.10.1.169:61164
+[13:08:34 DBG] [EndpointActor] Created channel and client for address 10.10.1.169:61164
+[13:08:34 DBG] Got status updates from Consul
+[13:08:34 DBG] Updating Cluster Topology
+[13:08:34 DBG] Published event {"Address": "10.10.1.169:61164", "$type": "EndpointTerminatedEvent"}
+[13:08:34 DBG] Published ClusterTopology event { "eventId": "201", "members": [ { "host": "10.10.1.169", "port": 61143, "id": "e3158deca88d4c7482153b511807d2d4", "kinds": [ "ping", "poison1" ] }, { "host": "10.10.1.169", "port": 61194, "id": "609f57ef1b37445386fe7e75343f5d0d", "kinds": [ "poison2", "pong" ] } ], "left": [ { "host": "10.10.1.169", "port": 61164, "id": "9b835ca08577410e8d46df57d7cc4921" } ] }
+[13:08:34 DBG] [EndpointManager] Endpoint 10.10.1.169:61164 terminated removing from connections
+[13:08:34 INF] Cluster members left ["{ \"host\": \"10.10.1.169\",
+
