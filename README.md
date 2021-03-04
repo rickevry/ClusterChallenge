@@ -48,5 +48,5 @@ Test bench to run tests against a Kubernetes cluster.
 
 - [Failed restart][5] 
 
-[5]: <https://github.com/rickevry/ClusterChallenge/blob/main/Testscases/LocalFailedNodeRestart/log.txtt>
+[5]: <https://github.com/rickevry/ClusterChallenge/blob/main/Testscases/LocalFailedNodeRestart/log.txt>
 
