@@ -28,4 +28,18 @@ Test bench to run tests against a Kubernetes cluster.
 - rickevry/cluster-challenge-worker1:1.0
 - rickevry/cluster-challenge-worker2:1.0
 
+## Test case 2
+
+- Start Worker2 in Visual Studio 2019 (instance 1)
+- Start Worker1 in Visual Studio 2019 (instance 2)
+- Verify that everything is running OK
+- Go to taskmanager and end task Worker2
+- Wait 1 second
+- Start Worker2 again
+
+### Details
+- Worker1 and Worker2 runs in VS
+- Consul runs in Docker
+- Mongo runs in Docker
+- Proto.Cluster.Identity.MongoDb 0.12.0
 
