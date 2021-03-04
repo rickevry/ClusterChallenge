@@ -43,3 +43,10 @@ Test bench to run tests against a Kubernetes cluster.
 - Mongo runs in Docker
 - Proto.Cluster.Identity.MongoDb 0.12.0
 
+
+### Log files
+
+- [Failed restart][5] 
+
+[5]: <https://https://raw.githubusercontent.com/rickevry/ClusterChallenge/main/Testscases/LocalFailedNodeRestart/log.txt>
+
