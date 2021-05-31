@@ -1,4 +1,4 @@
-kubectl create namespace clusterchallenge
+kubectl create namespace clusterchallenge --context docker-desktop
 
-kubectl apply -f .\Role-devmanager.yaml -n clusterchallenge
-kubectl apply -f .\Role-binding.yaml -n clusterchallenge
+kubectl apply -f .\Role-devmanager.yaml -n clusterchallenge --context docker-desktop
+kubectl apply -f .\Role-binding.yaml -n clusterchallenge --context docker-desktop

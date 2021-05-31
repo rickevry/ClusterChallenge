@@ -16,14 +16,13 @@ spec:
     app: worker1
 ---
 apiVersion: apps/v1
-kind: StatefulSet
+kind: Deployment
 metadata:
   namespace: clusterchallenge
   name: worker1
   labels:
     app: worker1
 spec:
-  serviceName: worker1
   replicas: 1
   selector:
     matchLabels:
@@ -33,7 +32,6 @@ spec:
       labels:
         app: worker1
     spec:
-      terminationGracePeriodSeconds: 31
       containers:
       - name: worker1
         image: rickevry/cluster-challenge-worker1:1.0

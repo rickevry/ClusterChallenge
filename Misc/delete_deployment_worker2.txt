@@ -1,0 +1,220 @@
+[17:50:38 DBG] Requesting ping/Worker1/101 Message { "Counter": 107 }
+[17:50:38 DBG] Requesting Worker1/101-ping Message { "Counter": 107 } - Got PID 10.244.3.161:38239/placement-activator/ping/Worker1/101$44 from PidCache
+[17:50:38 INF] PingGrain.HandlePing
+[17:50:38 DBG] 10.244.3.161:38239/placement-activator/ping/Worker1/101$44 Responding to 10.244.3.161:38239/$238 with message { "Counter": 108, "Success": true }
+[17:50:38 INF] Ping counter is 108
+[17:50:38 DBG] Requesting pong/Worker2/101 Message { "Counter": 106 }
+[17:50:38 DBG] Requesting Worker2/101-pong Message { "Counter": 106 } - Got PID 10.244.3.160:40419/placement-activator/pong/Worker2/101$45 from PidCache
+[17:50:38 DBG] [EndpointWriterMailbox] received User Message {"Header": [], "Message": {"Counter": 106, "$type": "PongCmd"}, "Target": {"Address": "10.244.3.160:40419", "Id": "placement-activator/pong/Worker2/101$45", "$type": "PID"}, "Sender": {"Address": "10.244.3.161:38239", "Id": "$239", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:50:38 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: False HasUserMessages: True Suspended: False
+[17:50:38 DBG] [EndpointWriterMailbox] Processing User Message {"Header": [], "Message": {"Counter": 106, "$type": "PongCmd"}, "Target": {"Address": "10.244.3.160:40419", "Id": "placement-activator/pong/Worker2/101$45", "$type": "PID"}, "Sender": {"Address": "10.244.3.161:38239", "Id": "$239", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:50:38 DBG] [EndpointWriterMailbox] Calling message invoker
+[17:50:38 DBG] [EndpointReader] Received a batch of 1 messages from ipv4:10.244.3.160:54370
+[17:50:38 INF] Pong counter is 107
+[17:50:39 DBG] Requesting ping/Worker1/101 Message { "Counter": 108 }
+[17:50:39 DBG] Requesting Worker1/101-ping Message { "Counter": 108 } - Got PID 10.244.3.161:38239/placement-activator/ping/Worker1/101$44 from PidCache
+[17:50:39 INF] PingGrain.HandlePing
+[17:50:39 DBG] 10.244.3.161:38239/placement-activator/ping/Worker1/101$44 Responding to 10.244.3.161:38239/$240 with message { "Counter": 109, "Success": true }
+[17:50:39 INF] Ping counter is 109
+[17:50:39 DBG] Requesting pong/Worker2/101 Message { "Counter": 107 }
+[17:50:39 DBG] Requesting Worker2/101-pong Message { "Counter": 107 } - Got PID 10.244.3.160:40419/placement-activator/pong/Worker2/101$45 from PidCache
+[17:50:39 DBG] [EndpointWriterMailbox] received User Message {"Header": [], "Message": {"Counter": 107, "$type": "PongCmd"}, "Target": {"Address": "10.244.3.160:40419", "Id": "placement-activator/pong/Worker2/101$45", "$type": "PID"}, "Sender": {"Address": "10.244.3.161:38239", "Id": "$241", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:50:39 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: False HasUserMessages: True Suspended: False
+[17:50:39 DBG] [EndpointWriterMailbox] Processing User Message {"Header": [], "Message": {"Counter": 107, "$type": "PongCmd"}, "Target": {"Address": "10.244.3.160:40419", "Id": "placement-activator/pong/Worker2/101$45", "$type": "PID"}, "Sender": {"Address": "10.244.3.161:38239", "Id": "$241", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:50:39 DBG] [EndpointWriterMailbox] Calling message invoker
+[17:50:39 DBG] [EndpointReader] Received a batch of 1 messages from ipv4:10.244.3.160:54370
+[17:50:39 INF] Pong counter is 108
+[17:50:40 DBG] Requesting ping/Worker1/101 Message { "Counter": 109 }
+[17:50:40 DBG] Requesting Worker1/101-ping Message { "Counter": 109 } - Got PID 10.244.3.161:38239/placement-activator/ping/Worker1/101$44 from PidCache
+[17:50:40 INF] PingGrain.HandlePing
+[17:50:40 DBG] 10.244.3.161:38239/placement-activator/ping/Worker1/101$44 Responding to 10.244.3.161:38239/$242 with message { "Counter": 110, "Success": true }
+[17:50:40 INF] Ping counter is 110
+[17:50:40 DBG] Requesting pong/Worker2/101 Message { "Counter": 108 }
+[17:50:40 DBG] Requesting Worker2/101-pong Message { "Counter": 108 } - Got PID 10.244.3.160:40419/placement-activator/pong/Worker2/101$45 from PidCache
+[17:50:40 DBG] [EndpointWriterMailbox] received User Message {"Header": [], "Message": {"Counter": 108, "$type": "PongCmd"}, "Target": {"Address": "10.244.3.160:40419", "Id": "placement-activator/pong/Worker2/101$45", "$type": "PID"}, "Sender": {"Address": "10.244.3.161:38239", "Id": "$243", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:50:40 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: False HasUserMessages: True Suspended: False
+[17:50:40 DBG] [EndpointWriterMailbox] Processing User Message {"Header": [], "Message": {"Counter": 108, "$type": "PongCmd"}, "Target": {"Address": "10.244.3.160:40419", "Id": "placement-activator/pong/Worker2/101$45", "$type": "PID"}, "Sender": {"Address": "10.244.3.161:38239", "Id": "$243", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:50:40 DBG] [EndpointWriterMailbox] Calling message invoker
+[17:50:40 DBG] [EndpointReader] Received a batch of 1 messages from ipv4:10.244.3.160:54370
+[17:50:40 INF] Pong counter is 109
+[17:50:40 DBG] Statistics: Actor Count 1
+
+kubectl delete deployment worker2 -n clusterchallenge
+
+[17:50:41 ERR] [EndpointActor] Lost connection to address 10.244.3.160:40419
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Socket closed", DebugException="Grpc.Core.Internal.CoreErrorDetailException: {"created":"@1614880241.035779403","description":"Error received from peer ipv4:10.244.3.160:40419","file":"/var/local/git/grpc/src/core/lib/surface/call.cc","file_line":1068,"grpc_message":"Socket closed","grpc_status":14}")
+   at Grpc.Core.Internal.ClientResponseStream`2.MoveNext(CancellationToken token)
+   at Proto.Remote.EndpointActor.<>c__DisplayClass16_0.<<ConnectAsync>b__0>d.MoveNext() in /src/Proto.Remote/Endpoints/EndpointActor.cs:line 91
+[17:50:41 DBG] [EndpointWriterMailbox] received System Message {"Address": "10.244.3.160:40419", "Exception": {"Status": {"StatusCode": "Unavailable", "Detail": "Socket closed", "DebugException": {"TargetSite": null, "StackTrace": null, "Message": "{\"created\":\"@1614880241.035779403\",\"description\":\"Error received from peer ipv4:10.244.3.160:40419\",\"file\":\"/var/local/git/grpc/src/core/lib/surface/call.cc\",\"file_line\":1068,\"grpc_message\":\"Socket closed\",\"grpc_status\":14}", "Data": [], "InnerException": null, "HelpLink": null, "Source": null, "HResult": -2146233088, "$type": "CoreErrorDetailException"}, "$type": "Status"}, "StatusCode": "Unavailable", "Trailers": [], "TargetSite": "Void Throw()", "StackTrace": "   at Grpc.Core.Internal.ClientResponseStream`2.MoveNext(CancellationToken token)\n   at Proto.Remote.EndpointActor.<>c__DisplayClass16_0.<<ConnectAsync>b__0>d.MoveNext() in /src/Proto.Remote/Endpoints/EndpointActor.cs:line 91", "Message": "Status(StatusCode=\"Unavailable\", Detail=\"Socket closed\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1614880241.035779403\",\"description\":\"Error received from peer ipv4:10.244.3.160:40419\",\"file\":\"/var/local/git/grpc/src/core/lib/surface/call.cc\",\"file_line\":1068,\"grpc_message\":\"Socket closed\",\"grpc_status\":14}\")", "Data": [], "InnerException": null, "HelpLink": null, "Source": "System.Private.CoreLib", "HResult": -2146233088, "$type": "RpcException"}, "$type": "EndpointErrorEvent"}
+[17:50:41 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: False Suspended: False
+[17:50:41 DBG] [EndpointWriterMailbox] Processing System Message {"Address": "10.244.3.160:40419", "Exception": {"Status": {"StatusCode": "Unavailable", "Detail": "Socket closed", "DebugException": {"TargetSite": null, "StackTrace": null, "Message": "{\"created\":\"@1614880241.035779403\",\"description\":\"Error received from peer ipv4:10.244.3.160:40419\",\"file\":\"/var/local/git/grpc/src/core/lib/surface/call.cc\",\"file_line\":1068,\"grpc_message\":\"Socket closed\",\"grpc_status\":14}", "Data": [], "InnerException": null, "HelpLink": null, "Source": null, "HResult": -2146233088, "$type": "CoreErrorDetailException"}, "$type": "Status"}, "StatusCode": "Unavailable", "Trailers": [], "TargetSite": "Void Throw()", "StackTrace": "   at Grpc.Core.Internal.ClientResponseStream`2.MoveNext(CancellationToken token)\n   at Proto.Remote.EndpointActor.<>c__DisplayClass16_0.<<ConnectAsync>b__0>d.MoveNext() in /src/Proto.Remote/Endpoints/EndpointActor.cs:line 91", "Message": "Status(StatusCode=\"Unavailable\", Detail=\"Socket closed\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1614880241.035779403\",\"description\":\"Error received from peer ipv4:10.244.3.160:40419\",\"file\":\"/var/local/git/grpc/src/core/lib/surface/call.cc\",\"file_line\":1068,\"grpc_message\":\"Socket closed\",\"grpc_status\":14}\")", "Data": [], "InnerException": null, "HelpLink": null, "Source": "System.Private.CoreLib", "HResult": -2146233088, "$type": "RpcException"}, "$type": "EndpointErrorEvent"}
+[17:50:41 DBG] [EndpointWriterMailbox] received System Message {"$type": "SuspendMailbox"}
+[17:50:41 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: False Suspended: True
+[17:50:41 DBG] [EndpointWriterMailbox] Processing System Message {"$type": "SuspendMailbox"}
+[17:50:41 DBG] Requesting ping/Worker1/101 Message { "Counter": 110 }
+[17:50:41 DBG] Requesting Worker1/101-ping Message { "Counter": 110 } - Got PID 10.244.3.161:38239/placement-activator/ping/Worker1/101$44 from PidCache
+[17:50:41 INF] PingGrain.HandlePing
+[17:50:41 DBG] 10.244.3.161:38239/placement-activator/ping/Worker1/101$44 Responding to 10.244.3.161:38239/$244 with message { "Counter": 111, "Success": true }
+[17:50:41 INF] Ping counter is 111
+[17:50:41 DBG] Requesting pong/Worker2/101 Message { "Counter": 109 }
+[17:50:41 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Got PID 10.244.3.160:40419/placement-activator/pong/Worker2/101$45 from PidCache
+[17:50:41 DBG] [EndpointWriterMailbox] received User Message {"Header": [], "Message": {"Counter": 109, "$type": "PongCmd"}, "Target": {"Address": "10.244.3.160:40419", "Id": "placement-activator/pong/Worker2/101$45", "$type": "PID"}, "Sender": {"Address": "10.244.3.161:38239", "Id": "$245", "$type": "PID"}, "SerializerId": -1, "$type": "RemoteDeliver"}
+[17:50:41 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: False HasUserMessages: True Suspended: True
+[17:50:41 WRN] Restarting 10.244.3.161:38239/endpoint-10.244.3.160:40419 after 00:00:00.4170000 because of RpcException
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Socket closed", DebugException="Grpc.Core.Internal.CoreErrorDetailException: {"created":"@1614880241.035779403","description":"Error received from peer ipv4:10.244.3.160:40419","file":"/var/local/git/grpc/src/core/lib/surface/call.cc","file_line":1068,"grpc_message":"Socket closed","grpc_status":14}")
+   at Proto.Remote.EndpointActor.EndpointError(EndpointErrorEvent evt) in /src/Proto.Remote/Endpoints/EndpointActor.cs:line 131
+   at Proto.Remote.EndpointActor.ConnectedAsync(IContext context) in /src/Proto.Remote/Endpoints/EndpointActor.cs:line 60
+   at Proto.Context.ActorContext.ProcessMessageAsync(Object msg) in /src/Proto.Actor/Context/ActorContext.cs:line 369
+   at Proto.Context.ActorContext.InvokeUserMessageAsync(Object msg) in /src/Proto.Actor/Context/ActorContext.cs:line 291
+   at Proto.Remote.EndpointWriterMailbox.RunAsync() in /src/Proto.Remote/Endpoints/EndpointWriterMailbox.cs:line 101
+[17:50:41 DBG] [EndpointWriterMailbox] received System Message {"Reason": {"Status": {"StatusCode": "Unavailable", "Detail": "Socket closed", "DebugException": {"TargetSite": null, "StackTrace": null, "Message": "{\"created\":\"@1614880241.035779403\",\"description\":\"Error received from peer ipv4:10.244.3.160:40419\",\"file\":\"/var/local/git/grpc/src/core/lib/surface/call.cc\",\"file_line\":1068,\"grpc_message\":\"Socket closed\",\"grpc_status\":14}", "Data": [], "InnerException": null, "HelpLink": null, "Source": null, "HResult": -2146233088, "$type": "CoreErrorDetailException"}, "$type": "Status"}, "StatusCode": "Unavailable", "Trailers": [], "TargetSite": "Void Throw()", "StackTrace": "   at Proto.Remote.EndpointActor.EndpointError(EndpointErrorEvent evt) in /src/Proto.Remote/Endpoints/EndpointActor.cs:line 131\n   at Proto.Remote.EndpointActor.ConnectedAsync(IContext context) in /src/Proto.Remote/Endpoints/EndpointActor.cs:line 60\n   at Proto.Context.ActorContext.ProcessMessageAsync(Object msg) in /src/Proto.Actor/Context/ActorContext.cs:line 369\n   at Proto.Context.ActorContext.InvokeUserMessageAsync(Object msg) in /src/Proto.Actor/Context/ActorContext.cs:line 291\n   at Proto.Remote.EndpointWriterMailbox.RunAsync() in /src/Proto.Remote/Endpoints/EndpointWriterMailbox.cs:line 101", "Message": "Status(StatusCode=\"Unavailable\", Detail=\"Socket closed\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1614880241.035779403\",\"description\":\"Error received from peer ipv4:10.244.3.160:40419\",\"file\":\"/var/local/git/grpc/src/core/lib/surface/call.cc\",\"file_line\":1068,\"grpc_message\":\"Socket closed\",\"grpc_status\":14}\")", "Data": [], "InnerException": null, "HelpLink": null, "Source": "System.Private.CoreLib", "HResult": -2146233088, "$type": "RpcException"}, "$type": "Restart"}
+[17:50:41 DBG] [EndpointWriterMailbox] Running Mailbox Loop HasSystemMessages: True HasUserMessages: True Suspended: True
+[17:50:41 DBG] [EndpointWriterMailbox] Processing System Message {"Reason": {"Status": {"StatusCode": "Unavailable", "Detail": "Socket closed", "DebugException": {"TargetSite": null, "StackTrace": null, "Message": "{\"created\":\"@1614880241.035779403\",\"description\":\"Error received from peer ipv4:10.244.3.160:40419\",\"file\":\"/var/local/git/grpc/src/core/lib/surface/call.cc\",\"file_line\":1068,\"grpc_message\":\"Socket closed\",\"grpc_status\":14}", "Data": [], "InnerException": null, "HelpLink": null, "Source": null, "HResult": -2146233088, "$type": "CoreErrorDetailException"}, "$type": "Status"}, "StatusCode": "Unavailable", "Trailers": [], "TargetSite": "Void Throw()", "StackTrace": "   at Proto.Remote.EndpointActor.EndpointError(EndpointErrorEvent evt) in /src/Proto.Remote/Endpoints/EndpointActor.cs:line 131\n   at Proto.Remote.EndpointActor.ConnectedAsync(IContext context) in /src/Proto.Remote/Endpoints/EndpointActor.cs:line 60\n   at Proto.Context.ActorContext.ProcessMessageAsync(Object msg) in /src/Proto.Actor/Context/ActorContext.cs:line 369\n   at Proto.Context.ActorContext.InvokeUserMessageAsync(Object msg) in /src/Proto.Actor/Context/ActorContext.cs:line 291\n   at Proto.Remote.EndpointWriterMailbox.RunAsync() in /src/Proto.Remote/Endpoints/EndpointWriterMailbox.cs:line 101", "Message": "Status(StatusCode=\"Unavailable\", Detail=\"Socket closed\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1614880241.035779403\",\"description\":\"Error received from peer ipv4:10.244.3.160:40419\",\"file\":\"/var/local/git/grpc/src/core/lib/surface/call.cc\",\"file_line\":1068,\"grpc_message\":\"Socket closed\",\"grpc_status\":14}\")", "Data": [], "InnerException": null, "HelpLink": null, "Source": "System.Private.CoreLib", "HResult": -2146233088, "$type": "RpcException"}, "$type": "Restart"}
+[17:50:41 DBG] [EndpointActor] Handle terminated address 10.244.3.160:40419
+[17:50:41 DBG] [EndpointWriterMailbox] received System Message {"$type": "ResumeMailbox"}
+[17:50:41 DBG] [EndpointActor] Connecting to address 10.244.3.160:40419
+[17:50:41 DBG] [EndpointActor] Created channel and client for address 10.244.3.160:40419
+[17:50:42 DBG] Updating Cluster Topology
+[17:50:42 DBG] Published ClusterTopology event { "members": [ { "host": "10.244.3.160", "port": 40419, "id": "72570ceb17cf46c189c21b3c94baefa5", "kinds": [ "poison2", "pong" ] }, { "host": "10.244.3.161", "port": 38239, "id": "2fea8dc511de4206a70a4a3314eb748c", "kinds": [ "ping", "poison1" ] } ] }
+[17:50:45 DBG] Statistics: Actor Count 1
+[17:50:45 DBG] Updating Cluster Topology
+[17:50:45 DBG] Published ClusterTopology event { "members": [ { "host": "10.244.3.160", "port": 40419, "id": "72570ceb17cf46c189c21b3c94baefa5", "kinds": [ "poison2", "pong" ] }, { "host": "10.244.3.161", "port": 38239, "id": "2fea8dc511de4206a70a4a3314eb748c", "kinds": [ "ping", "poison1" ] } ] }
+[17:50:45 DBG] Updating Cluster Topology
+[17:50:45 DBG] Published event {"Address": "10.244.3.160:40419", "$type": "EndpointTerminatedEvent"}
+[17:50:45 DBG] Published ClusterTopology event { "members": [ { "host": "10.244.3.161", "port": 38239, "id": "2fea8dc511de4206a70a4a3314eb748c", "kinds": [ "ping", "poison1" ] } ], "left": [ { "host": "10.244.3.160", "port": 40419, "id": "72570ceb17cf46c189c21b3c94baefa5" } ] }
+[17:50:45 INF] Cluster members left ["{ \"host\": \"10.244.3.160\", \"port\": 40419, \"id\": \"72570ceb17cf46c189c21b3c94baefa5\" }"]
+[17:50:45 DBG] [EndpointManager] Endpoint 10.244.3.160:40419 terminated removing from connections
+[17:50:45 DBG] [EndpointWriterMailbox] received System Message {"Watcher": {"Address": "10.244.3.161:38239", "Id": "$246", "$type": "PID"}, "$type": "Watch"}
+[17:50:45 DBG] [EndpointWriterMailbox] received System Message {"$type": "Stop"}
+[17:50:46 DBG] TryRequestAsync timed out, PID from PidCache
+[17:50:46 FTL] Rickard: IsCancellationRequested is true
+[17:50:46 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$247 with message Proto.Cluster.Identity.PidResult
+[17:50:46 WRN] Failed to get PID from IIdentityLookup
+[17:50:46 WRN] Rickard: System.TimeoutException: Request didn't receive any Response within the expected time.
+   at Proto.RootContext.RequestAsync[T](PID target, Object message, FutureProcess future) in /src/Proto.Actor/Context/RootContext.cs:line 146
+   at Proto.Cluster.Identity.IdentityStorageLookup.GetAsync(ClusterIdentity clusterIdentity, CancellationToken ct) in /src/Proto.Cluster/Identity/IdentityStorageLookup.cs:line 27
+   at Proto.Cluster.DefaultClusterContext.RequestAsync[T](ClusterIdentity clusterIdentity, Object message, ISenderContext context, CancellationToken ct) in /src/Proto.Cluster/DefaultClusterContext.cs:line 58
+[17:50:46 WRN] RequestAsync retried but failed for ClusterIdentity pong/Worker2/101
+[17:50:46 INF] Failed to call pong 4'
+[17:50:47 DBG] Requesting ping/Worker1/101 Message { "Counter": 111 }
+[17:50:47 DBG] Requesting Worker1/101-ping Message { "Counter": 111 } - Got PID 10.244.3.161:38239/placement-activator/ping/Worker1/101$44 from PidCache
+[17:50:47 INF] PingGrain.HandlePing
+[17:50:47 DBG] 10.244.3.161:38239/placement-activator/ping/Worker1/101$44 Responding to 10.244.3.161:38239/$248 with message { "Counter": 112, "Success": true }
+[17:50:47 INF] Ping counter is 112
+[17:50:47 DBG] Requesting pong/Worker2/101 Message { "Counter": 109 }
+[17:50:47 FTL] Rickard: IsCancellationRequested is false
+[17:50:47 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$249 with message Proto.Cluster.Identity.PidResult
+[17:50:47 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:47 FTL] Rickard: IsCancellationRequested is false
+[17:50:47 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$250 with message Proto.Cluster.Identity.PidResult
+[17:50:47 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:47 FTL] Rickard: IsCancellationRequested is false
+[17:50:47 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$251 with message Proto.Cluster.Identity.PidResult
+[17:50:47 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:47 FTL] Rickard: IsCancellationRequested is false
+[17:50:47 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$252 with message Proto.Cluster.Identity.PidResult
+[17:50:47 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:47 FTL] Rickard: IsCancellationRequested is false
+[17:50:47 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$253 with message Proto.Cluster.Identity.PidResult
+[17:50:47 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:47 FTL] Rickard: IsCancellationRequested is false
+[17:50:47 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$254 with message Proto.Cluster.Identity.PidResult
+[17:50:47 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:47 FTL] Rickard: IsCancellationRequested is false
+[17:50:47 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$255 with message Proto.Cluster.Identity.PidResult
+[17:50:47 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:47 FTL] Rickard: IsCancellationRequested is false
+[17:50:47 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$256 with message Proto.Cluster.Identity.PidResult
+[17:50:47 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:47 FTL] Rickard: IsCancellationRequested is false
+[17:50:47 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$257 with message Proto.Cluster.Identity.PidResult
+[17:50:47 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:47 FTL] Rickard: IsCancellationRequested is false
+[17:50:47 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$258 with message Proto.Cluster.Identity.PidResult
+[17:50:47 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:48 FTL] Rickard: IsCancellationRequested is false
+[17:50:48 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$259 with message Proto.Cluster.Identity.PidResult
+[17:50:48 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:48 FTL] Rickard: IsCancellationRequested is false
+[17:50:48 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$260 with message Proto.Cluster.Identity.PidResult
+[17:50:48 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:48 FTL] Rickard: IsCancellationRequested is false
+[17:50:48 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$261 with message Proto.Cluster.Identity.PidResult
+[17:50:48 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:48 FTL] Rickard: IsCancellationRequested is false
+[17:50:48 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$262 with message Proto.Cluster.Identity.PidResult
+[17:50:48 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:48 FTL] Rickard: IsCancellationRequested is false
+[17:50:48 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$263 with message Proto.Cluster.Identity.PidResult
+[17:50:48 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:49 FTL] Rickard: IsCancellationRequested is false
+[17:50:49 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$264 with message Proto.Cluster.Identity.PidResult
+[17:50:49 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:49 FTL] Rickard: IsCancellationRequested is false
+[17:50:49 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$265 with message Proto.Cluster.Identity.PidResult
+[17:50:49 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:49 FTL] Rickard: IsCancellationRequested is false
+[17:50:49 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$266 with message Proto.Cluster.Identity.PidResult
+[17:50:49 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:50 FTL] Rickard: IsCancellationRequested is false
+[17:50:50 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$267 with message Proto.Cluster.Identity.PidResult
+[17:50:50 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:50 DBG] Statistics: Actor Count 1
+[17:50:50 FTL] Rickard: IsCancellationRequested is false
+[17:50:50 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$268 with message Proto.Cluster.Identity.PidResult
+[17:50:50 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:50 FTL] Rickard: IsCancellationRequested is false
+[17:50:50 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$269 with message Proto.Cluster.Identity.PidResult
+[17:50:50 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:51 FTL] Rickard: IsCancellationRequested is false
+[17:50:51 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$270 with message Proto.Cluster.Identity.PidResult
+[17:50:51 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:51 FTL] Rickard: IsCancellationRequested is false
+[17:50:51 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$271 with message Proto.Cluster.Identity.PidResult
+[17:50:51 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:52 WRN] RequestAsync retried but failed for ClusterIdentity pong/Worker2/101
+[17:50:52 INF] Failed to call pong 5'
+[17:50:53 DBG] Requesting ping/Worker1/101 Message { "Counter": 112 }
+[17:50:53 DBG] Requesting Worker1/101-ping Message { "Counter": 112 } - Got PID 10.244.3.161:38239/placement-activator/ping/Worker1/101$44 from PidCache
+[17:50:53 INF] PingGrain.HandlePing
+[17:50:53 DBG] 10.244.3.161:38239/placement-activator/ping/Worker1/101$44 Responding to 10.244.3.161:38239/$272 with message { "Counter": 113, "Success": true }
+[17:50:53 INF] Ping counter is 113
+[17:50:53 DBG] Requesting pong/Worker2/101 Message { "Counter": 109 }
+[17:50:53 FTL] Rickard: IsCancellationRequested is false
+[17:50:53 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$273 with message Proto.Cluster.Identity.PidResult
+[17:50:53 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:53 FTL] Rickard: IsCancellationRequested is false
+[17:50:53 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$274 with message Proto.Cluster.Identity.PidResult
+[17:50:53 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:53 FTL] Rickard: IsCancellationRequested is false
+[17:50:53 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$275 with message Proto.Cluster.Identity.PidResult
+[17:50:53 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:53 FTL] Rickard: IsCancellationRequested is false
+[17:50:53 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$276 with message Proto.Cluster.Identity.PidResult
+[17:50:53 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:53 FTL] Rickard: IsCancellationRequested is false
+[17:50:53 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$277 with message Proto.Cluster.Identity.PidResult
+[17:50:53 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:53 FTL] Rickard: IsCancellationRequested is false
+[17:50:53 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$278 with message Proto.Cluster.Identity.PidResult
+[17:50:53 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:53 FTL] Rickard: IsCancellationRequested is false
+[17:50:53 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$279 with message Proto.Cluster.Identity.PidResult
+[17:50:53 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:53 FTL] Rickard: IsCancellationRequested is false
+[17:50:53 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$280 with message Proto.Cluster.Identity.PidResult
+[17:50:53 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:53 FTL] Rickard: IsCancellationRequested is false
+[17:50:53 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$281 with message Proto.Cluster.Identity.PidResult
+[17:50:53 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:54 FTL] Rickard: IsCancellationRequested is false
+[17:50:54 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$282 with message Proto.Cluster.Identity.PidResult
+[17:50:54 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:54 FTL] Rickard: IsCancellationRequested is false
+[17:50:54 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$283 with message Proto.Cluster.Identity.PidResult
+[17:50:54 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:54 FTL] Rickard: IsCancellationRequested is false
+[17:50:54 DBG] 10.244.3.161:38239/$2 Responding to 10.244.3.161:38239/$284 with message Proto.Cluster.Identity.PidResult
+[17:50:54 DBG] Requesting Worker2/101-pong Message { "Counter": 109 } - Did not get PID from IdentityLookup
+[17:50:54 FTL] Rickard: IsCancellationRequested is false
+
