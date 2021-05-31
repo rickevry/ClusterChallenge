@@ -29,7 +29,7 @@ namespace Worker1
                 string tick = DateTime.Now.Ticks.ToString();
                 string kind = "ping";
                 var cmd = new PingCmd { Counter = pingCounter };
-                var res = await _cluster.RequestAsync<PingResponse>("Worker1/101", kind, cmd, new CancellationTokenSource(TimeSpan.FromSeconds(5)).Token, tick);
+                var res = await _cluster.RequestAsync<PingResponse>("Worker1/101", kind, cmd, new CancellationTokenSource(TimeSpan.FromSeconds(5)).Token);
                 if (true.Equals(res?.Success))
                 {
                     pingCounter = res.Counter;
@@ -56,7 +56,7 @@ namespace Worker1
 
                 var cmd = new PongCmd { Counter = pongCounter };
                 this.logger.LogInformation("Calling Pong", tick);
-                var res = await _cluster.RequestAsync<PongResponse>("Worker2/101", kind, cmd, new CancellationTokenSource(TimeSpan.FromSeconds(5)).Token, tick);
+                var res = await _cluster.RequestAsync<PongResponse>("Worker2/101", kind, cmd, new CancellationTokenSource(TimeSpan.FromSeconds(5)).Token);
                 if (true.Equals(res?.Success))
                 {
                     pongCounter = res.Counter;
