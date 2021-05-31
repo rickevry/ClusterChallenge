@@ -13,8 +13,9 @@ COPY ["./Proto.Cluster.Identity.MongoDb/Proto.Cluster.Identity.MongoDb.csproj", 
 COPY ["./Proto.Cluster.Kubernetes/Proto.Cluster.Kubernetes.csproj", "Proto.Cluster.Kubernetes/"]
 COPY ["./Proto.Remote/Proto.Remote.csproj", "Proto.Remote/"]
 COPY ["./Proto.Remote.GrpcCore/Proto.Remote.GrpcCore.csproj", "Proto.Remote.GrpcCore/"]
+COPY ["./Proto.Cluster.Consul/Proto.Cluster.Consul.csproj", "Proto.Cluster.Consul/"]
 
-RUN dotnet restoreXXX "Worker1/Worker1.csproj"
+RUN dotnet restore "./Worker1/Worker1.csproj"
 
 COPY . .
 WORKDIR "/src/Worker1"

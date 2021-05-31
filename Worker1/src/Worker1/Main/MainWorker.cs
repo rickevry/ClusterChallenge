@@ -26,10 +26,11 @@ namespace Worker1
         {
             try
             {
+                string tick = DateTime.Now.Ticks.ToString();
                 string kind = "ping";
                 var cmd = new PingCmd { Counter = pingCounter };
-                var res = await _cluster.RequestAsync<PingResponse>("Worker1/101", kind, cmd, new CancellationTokenSource(TimeSpan.FromSeconds(5)).Token);
-                if (res.Success)
+                var res = await _cluster.RequestAsync<PingResponse>("Worker1/101", kind, cmd, new CancellationTokenSource(TimeSpan.FromSeconds(5)).Token, tick);
+                if (true.Equals(res?.Success))
                 {
                     pingCounter = res.Counter;
                     this.logger.LogInformation("Ping counter is {counter}", pingCounter);
@@ -37,7 +38,7 @@ namespace Worker1
                 else
                 {
                     errors++;
-                    this.logger.LogInformation("Failed to call {Kind} {errors}'", kind, errors);
+                    this.logger.LogInformation("Failed to call {Tick} {Kind} {errors} '", tick, kind, errors);
                 }
             }
             catch (Exception e)
@@ -51,8 +52,11 @@ namespace Worker1
             try
             {
                 string kind = "pong";
+                string tick = DateTime.Now.Ticks.ToString();
+
                 var cmd = new PongCmd { Counter = pongCounter };
-                var res = await _cluster.RequestAsync<PongResponse>("Worker2/101", kind, cmd, new CancellationTokenSource(TimeSpan.FromSeconds(5)).Token);
+                this.logger.LogInformation("Calling Pong", tick);
+                var res = await _cluster.RequestAsync<PongResponse>("Worker2/101", kind, cmd, new CancellationTokenSource(TimeSpan.FromSeconds(5)).Token, tick);
                 if (true.Equals(res?.Success))
                 {
                     pongCounter = res.Counter;
@@ -61,7 +65,8 @@ namespace Worker1
                 else
                 {
                     errors++;
-                    this.logger.LogInformation("Failed to call {Kind} {errors}'", kind, errors);
+                    this.logger.LogInformation("Failed to call {Tick} {Kind} {errors} '", tick, kind, errors);
+
                 }
             }
             catch (Exception e)
@@ -73,7 +78,7 @@ namespace Worker1
         public async Task Run(Cluster _cluster)
         {
 
-            this.logger.LogInformation("MainWorker start 2021-03-02 18:15");
+            this.logger.LogInformation("MainWorker start 2021-03-04 14:55");
             await Task.Delay(5000);
 
             while (true)
