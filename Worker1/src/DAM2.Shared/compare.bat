@@ -1,0 +1,1 @@
+"C:\Program Files\Beyond Compare 4\BCompare.exe" H:\DAM2\DAM2.Shared H:\DAM2\DAM2.Core.Actors\Shared
