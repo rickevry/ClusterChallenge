@@ -1,0 +1,71 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="k8s\**" />
+    <EmbeddedResource Remove="k8s\**" />
+    <None Remove="k8s\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Protobuf\Messages\pingpong.proto" />
+    <None Remove="Protobuf\Messages\poisonpill.proto" />
+    <None Remove="Protobuf\Messages\status.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Security.KeyVault.Secrets" Version="4.1.0" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.8.0" />
+    <PackageReference Include="DAM2.Shared" Version="1.0.5" />
+    <PackageReference Include="Google.Protobuf" Version="3.14.0" />
+    <PackageReference Include="Google.Protobuf.Tools" Version="3.14.0" />
+    <PackageReference Include="Grpc" Version="2.35.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.35.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.ApplicationInsights.WorkerService" Version="2.16.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.AzureKeyVault" Version="3.1.12" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="5.0.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.12.0-beta1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.2" />
+    <PackageReference Include="Proto.Actor" Version="0.12.0" />
+    <PackageReference Include="Proto.Cluster" Version="0.12.0" />
+    <PackageReference Include="Proto.Cluster.Consul" Version="0.12.0" />
+    <PackageReference Include="Proto.Cluster.Identity.MongoDb" Version="0.12.0" />
+    <PackageReference Include="Proto.Cluster.Identity.Redis" Version="0.12.0" />
+    <PackageReference Include="Proto.Cluster.Kubernetes" Version="0.12.0" />
+    <PackageReference Include="Proto.Remote" Version="0.12.0" />
+    <PackageReference Include="Proto.Remote.GrpcCore" Version="0.12.0" />
+    <PackageReference Include="Scrutor" Version="3.3.0" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="Serilog.Exceptions" Version="6.0.0" />
+    <PackageReference Include="Serilog.Sinks.ApplicationInsights" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protobuf\Messages\pingpong.proto" />
+    <Protobuf Include="Protobuf\Messages\poisonpill.proto" />
+    <Protobuf Include="Protobuf\Messages\status.proto" />
+  </ItemGroup>
+
+</Project>

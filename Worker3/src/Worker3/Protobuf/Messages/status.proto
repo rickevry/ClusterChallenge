@@ -1,0 +1,12 @@
+syntax = "proto3";
+package actor.status;
+option csharp_namespace = "Status";
+
+message GetStatusCmd {
+}
+
+message GetStatusResponse {
+}
+
+
+
